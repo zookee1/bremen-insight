@@ -1,2 +1,2 @@
 # bremen-dashboard
-project by arturh85, dantz and niklasmeyer, build at 2015.bremenhack.de
+project by <a href="http://github.com/arturh85">arturh85</a>, <a href="http://github.com/dantz">dantz</a> and <a href="http://github.com/niklasmeyer">niklasmeyer</a>, build at <a href="2015.bremenhack.de">#bremenhack</a>
