@@ -1,0 +1,3 @@
+bremen_hack_insight_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BremenHackInsightBundle:Default:index }

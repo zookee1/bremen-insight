@@ -1,0 +1,4 @@
+services:
+#    bremen_hack_insight.example:
+#        class: BremenHack\InsightBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
