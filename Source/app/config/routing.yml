@@ -1,0 +1,3 @@
+bremen_hack_insight:
+    resource: "@BremenHackInsightBundle/Resources/config/routing.yml"
+    prefix:   /
