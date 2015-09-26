@@ -12,6 +12,22 @@ parameters:
       filename: 17397.csv
       csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17397
       info: http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17283.de&asl=bremen02.c.734.de
+      controlColumn: 3
+      labelRow: 2
+
+
+    "17355":
+      name: asdf
+      filename: 17355.csv
+      controlColumn: 3
+      labelRow: 2
+
+
+    "17322":
+      name: asdf
+      filename: 17322.csv
+      controlColumn: 2
+      labelRow: 3
 
 
   bremenMapping:

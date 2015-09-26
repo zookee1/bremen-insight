@@ -164,7 +164,6 @@
         function getScala() {
             var precision = currentData.columnMaxima[selectedColumn] > 100 ? 100 : 10;
             var maxima = Math.ceil(currentData.columnMaxima[selectedColumn] / precision) * precision;
-            console.log(currentData.columnMaxima[selectedColumn], maxima);
             var grades = [];
             for(var i=0; i<8; i++) {
                 grades.push(Math.floor(maxima / 8 * i));
@@ -209,7 +208,6 @@
             };
 
             legend.addTo(map);
-
         }
         
         $.ajax('/geojson/17397').done(function(data) {

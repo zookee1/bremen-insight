@@ -25,7 +25,20 @@ class DefaultController extends Controller
         }, file($dataFolder . $dataset['filename']));
         $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-10.geojson'), true);
 
-        $columns = array_slice($csv[2], 4);
+        $controlColumn = $dataset['controlColumn'];
+
+        $columnRows = [];
+        for($i=0; $i<=$dataset['labelRow']; $i++) {
+            $columnRows[] = array_slice($csv[$i], $controlColumn + 1);
+        }
+
+        $columns = array_reduce($columnRows, function($a, $b) {
+            for($i=0; $i<count($a); $i++) {
+                $b[$i] = $a[$i] . ' ' . $b[$i];
+            }
+            return $b;
+        }, []);
+
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
         foreach($geojson['features'] as &$feature) {
@@ -40,10 +53,10 @@ class DefaultController extends Controller
                 }
                 if(strpos($line[1], $name) !== FALSE) {
                     $feature['properties']['locationKey'] = $line[0];
-                    $key = $line[3];
+                    $key = $line[$controlColumn];
                     $results[$key] = array_map(function($point) {
                         return (float) str_replace(',', '.', $point);
-                    }, array_slice($line, 4));
+                    }, array_slice($line, $controlColumn+1));
                     for($i=0; $i<count($results[$key]); $i++) {
                         if($results[$key][$i] > $geojson['columnMaxima'][$i]) {
                             $geojson['columnMaxima'][$i] = $results[$key][$i];
