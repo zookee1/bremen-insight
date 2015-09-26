@@ -1,0 +1,2 @@
+alias bI='cd ~/workspace/bremen-insight'
+alias bIstart='bI && cd Source && php app/console assets:install && php app/console server:run'
