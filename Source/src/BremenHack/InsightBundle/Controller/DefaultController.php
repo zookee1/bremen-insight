@@ -12,7 +12,7 @@ class DefaultController extends Controller
         return $this->render('BremenHackInsightBundle:Default:index.html.twig');
     }
 
-    public function geojsonAction($id)
+    public function geojsonAction($id, $level)
     {
         $datasets = $this->getParameter('datasets');
         if(!array_key_exists($id, $datasets)) {
@@ -23,7 +23,7 @@ class DefaultController extends Controller
         $csv = array_map(function($line) {
             return str_getcsv(utf8_encode($line), ';');
         }, file($dataFolder . $dataset['filename']));
-        $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-10.geojson'), true);
+        $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-' . $level . '.geojson'), true);
 
         $controlColumn = $dataset['controlColumn'];
 
@@ -41,6 +41,7 @@ class DefaultController extends Controller
 
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
+        $geojson['columnMinima'] = array_fill(0, count($columns), 0);
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
@@ -60,6 +61,9 @@ class DefaultController extends Controller
                     for($i=0; $i<count($results[$key]); $i++) {
                         if($results[$key][$i] > $geojson['columnMaxima'][$i]) {
                             $geojson['columnMaxima'][$i] = $results[$key][$i];
+                        }
+                        if($results[$key][$i] < $geojson['columnMinima'][$i]) {
+                            $geojson['columnMinima'][$i] = $results[$key][$i];
                         }
                     }
                 }
