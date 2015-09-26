@@ -34,6 +34,9 @@ class DefaultController extends Controller
 
         $columns = array_reduce($columnRows, function($a, $b) {
             for($i=0; $i<count($a); $i++) {
+                if(!isset($b[$i])) {
+                    $b[$i] = '';
+                }
                 $b[$i] = $a[$i] . ' ' . $b[$i];
             }
             return $b;
@@ -41,11 +44,6 @@ class DefaultController extends Controller
 
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
-        array_pop($csv);
-        array_pop($csv);
-        array_pop($csv);
-        array_pop($csv);
-        array_pop($csv);
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
@@ -56,7 +54,7 @@ class DefaultController extends Controller
                 if(count($line) < 3) {
                     continue;
                 }
-                if($this->isLineRelevantForFeature($name, $line[0])) {
+                if(strpos($line[1], $name) !== FALSE) {
                     $feature['properties']['locationKey'] = $line[0];
                     $key = $line[$controlColumn];
                     $results[$key] = array_map(function($point) {
@@ -65,6 +63,9 @@ class DefaultController extends Controller
                     for($i=0; $i<count($results[$key]); $i++) {
                         if($results[$key][$i] > $geojson['columnMaxima'][$i]) {
                             $geojson['columnMaxima'][$i] = $results[$key][$i];
+                        }
+                        if($results[$key][$i] < $geojson['columnMinima'][$i]) {
+                            $geojson['columnMinima'][$i] = $results[$key][$i];
                         }
                     }
                 }
