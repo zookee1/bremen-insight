@@ -23,7 +23,7 @@ class DefaultController extends Controller
         $csv = array_map(function($line) {
             return str_getcsv(utf8_encode($line), ';');
         }, file($dataFolder . $dataset['filename']));
-        $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-' . $level . '.geojson'), true);
+        $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-' . $level . '.json'), true);
 
         $controlColumn = $dataset['controlColumn'];
 

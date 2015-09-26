@@ -291,7 +291,7 @@
         function loadDataset(id) {
             console.log("loading ", id);
             selectedDataset = id;
-            $.ajax('/geojson/' + selectedDataset + '/10').error(function(err) {
+            $.ajax('/geojson/' + selectedDataset + '/11').error(function(err) {
                 console.log(err);
                 map.clear();
 
