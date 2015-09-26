@@ -41,6 +41,11 @@ class DefaultController extends Controller
 
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
+        array_pop($csv);
+        array_pop($csv);
+        array_pop($csv);
+        array_pop($csv);
+        array_pop($csv);
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
@@ -51,7 +56,7 @@ class DefaultController extends Controller
                 if(count($line) < 3) {
                     continue;
                 }
-                if(strpos($line[1], $name) !== FALSE) {
+                if($this->isLineRelevantForFeature($name, $line[0])) {
                     $feature['properties']['locationKey'] = $line[0];
                     $key = $line[$controlColumn];
                     $results[$key] = array_map(function($point) {
@@ -72,6 +77,37 @@ class DefaultController extends Controller
         $response = new Response(json_encode($geojson));
         $response->headers->set('Content-Type', 'application/json');
         return $response;
+    }
+
+    public function isLineRelevantForFeature($name, $locationKey)
+    {
+        if(!is_numeric($locationKey)){
+            return false;
+        }
+        return $this->getBremenMapping($name, 10);
+    }
+
+    public function getBremenMapping($name, $administrationLevel)
+    {
+        $bremenMapping = $this->getParameter('bremenMapping');
+        echo $this->extractColumnFromArray($bremenMapping, $administrationLevel);
+        return false;
+    }
+
+    public function extractColumnFromArray($array, $administrationLevel) {
+        if($administrationLevel === 10)
+        {
+            $array_keys = array_keys($array['4#Bremen']['4011#Stadt Bremen']);
+
+        }
+        else if($administrationLevel === 11)
+        {
+            $array_keys = array_keys($array['Bremen']['4']['Stadt Bremen']['4011']['Mitte Bezirk']);
+        }
+
+        echo '<pre>';
+        print_r($array_keys);
+        exit;
     }
 
 }
