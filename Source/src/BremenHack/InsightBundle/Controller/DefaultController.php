@@ -44,6 +44,7 @@ class DefaultController extends Controller
 
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
+        $geojson['columnMinima'] = array_fill(0, count($columns), 0);
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
