@@ -44,7 +44,7 @@ class DefaultController extends Controller
 
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
-        $geojson['columnMinima'] = array_fill(0, count($columns), 0);
+        $geojson['columnMinima'] = array_fill(0, count($columns), 99999999999);
         $geojson['datasets'] = [];
 
         foreach($datasets as $key => $datasetData) {
@@ -64,7 +64,7 @@ class DefaultController extends Controller
                 if(count($line) < 3) {
                     continue;
                 }
-                if(strpos($line[1], $name) !== FALSE) {
+                if($this->isLineRelevantForFeature($name, $line[0], $level)) {
                     $feature['properties']['locationKey'] = $line[0];
                     $key = $line[$controlColumn];
                     $results[$key] = array_map(function($point) {
@@ -88,6 +88,36 @@ class DefaultController extends Controller
         $response = new Response(json_encode($geojson));
         $response->headers->set('Content-Type', 'application/json');
         return $response;
+    }
+
+    private function extractArrayLevel($array, $level) {
+        if($level === 0) {
+            return isset($array[0]) ? array_values($array) : array_keys($array);
+        } else {
+            $result = [];
+            foreach($array AS $key => $value) {
+                $result = array_merge($result, $this->extractArrayLevel($value, $level - 1));
+            }
+            return $result;
+        }
+    }
+
+    public function isLineRelevantForFeature($name, $locationKey, $level)
+    {
+        $mappings = $this->getParameter('bremenMapping');
+
+        $results = $this->extractArrayLevel($mappings, $level === 10 ? 3 : 4);
+
+        foreach($results as $result) {
+            $parts = explode('#', $result);
+            $lkey = $parts[0];
+            $lname = $parts[1];
+
+            if($lname == $name && (int) $lkey === (int) $locationKey) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
