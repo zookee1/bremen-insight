@@ -13,12 +13,32 @@
         body {
             padding: 0;
             margin: 0;
+            font: 16px/1.4 sans-serif;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0;
+            font-size: 1em;
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: .4em 3em .4em 0.6em;
+            background-image: url(/bundles/bremenhackinsight/images/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: calc(100% - 16px) center;
         }
 
 		#map {
 			width: 100%;
-			height: 100vh;
+			height: calc(100vh - 80px);
 		}
+
+        .logo {
+            margin-right: 1em;
+            margin-bottom: -6px;
+        }
 
         .leaflet-marker-icon {
             display: none;
@@ -57,10 +77,64 @@
         #map {
             width: 100%;
         }
+
+        .bar {
+            padding: 0.5em 1em;
+            -webkit-transform: translatez(0);
+            -moz-transform: translatez(0);
+            -ms-transform: translatez(0);
+            -o-transform: translatez(0);
+            transform: translatez(0);
+        }
+
+        @media (min-width: 700px) {
+            .bar {
+                max-width: 1100px;
+                margin: 0 auto;
+                height: 60px;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
+        .control__item {
+            padding: 0 0.5em;
+            flex: 1 0 150px;
+        }
+
+        .control__label {
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.7em;
+        }
+
+
 	</style>
 </head>
 <body>
 	<div id="map"></div>
+    <div class="bar" id="bar">
+        <a href="/"><img src="/bundles/bremenhackinsight/images/logo.svg" alt="bremen insights logo" class="logo"></a>
+
+        <div class="control__item">
+            <label class="control__label">Datensatz</label>
+            <select>
+                <option>Durschnittsalter 2030</option>
+            </select>
+        </div>
+        <div class="control__item">
+            <label class="control__label">Dimension</label>
+            <select>
+                <option>Neugeborene</option>
+            </select>
+        </div>
+        <div class="control__item">
+            <label class="control__label">Filter</label>
+            <select>
+                <option>männlich</option>
+            </select>
+        </div>
+    </div>
 	<script src="/bundles/bremenhackinsight/js/jquery-2.1.4.min.js"></script>
 	<script src="/bundles/bremenhackinsight/js/leaflet.js"></script>
 	<script type="text/javascript">
@@ -110,11 +184,11 @@
 
 		function style(feature) {
 			return {
-				weight: 2,
+				weight: 1,
 				opacity: 1,
-				color: 'white',
-				dashArray: '3',
-				fillOpacity: 0.7,
+				color: '#fff',
+				dashArray: '',
+				fillOpacity: 0.8,
 				fillColor: getColor(extractValue(feature.properties))
 			};
 		}
@@ -123,10 +197,10 @@
 			var layer = e.target;
 
 			layer.setStyle({
-				weight: 5,
-				color: '#666',
+				weight: 3,
+				color: '#fff',
 				dashArray: '',
-				fillOpacity: 0.7
+				fillOpacity: 1
 			});
 
 			if (!L.Browser.ie && !L.Browser.opera) {
