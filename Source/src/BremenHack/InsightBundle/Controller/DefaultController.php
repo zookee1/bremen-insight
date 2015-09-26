@@ -26,20 +26,13 @@ class DefaultController extends Controller
         $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-10.geojson'), true);
 
         $columns = array_slice($csv[2], 4);
-
-
-
         $geojson['columns'] = $columns;
-
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
             }
             $name = $feature['properties']['name'];
-
-
             $results = [];
-
             foreach($csv as $line) {
                 if(count($line) < 3) {
                     continue;
@@ -54,8 +47,9 @@ class DefaultController extends Controller
                 }
             }
             $feature['properties']['dataPoints'] = $results;
-
-
+            if($results) {
+                $geojson['categories'] = array_keys($results);
+            }
         }
         $response = new Response(json_encode($geojson));
         $response->headers->set('Content-Type', 'application/json');
