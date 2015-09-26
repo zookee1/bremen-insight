@@ -291,51 +291,58 @@
         function loadDataset(id) {
             $('#bar').hide();
             selectedDataset = id;
-            $.ajax('/geojson/' + selectedDataset + '/11').error(function(err) {
-                console.log(err);
-                alert("fail!");
-            }).done(function(data) {
-                currentData = data;
-                selectedCategory = data.categories[0];
-                refreshDataPoints();
-                map.attributionControl.addAttribution('Data &copy; <a href="http://daten.bremen.de/">Bremen</a>');
-                $('#categorySelect option').remove();
-                $('#datasetSelect option').remove();
-                $('#columnSelect option').remove();
+            $.ajax({
+                url: '/geojson/' + selectedDataset + '/11',
+                error: function(err){
+                    console.log(err);
+                    alert("fail!");
+                },
+                beforeSend: function(){
+                    console.log('started');
+                },
+                success: function(){
+                    console.log('success');
+                },
+                done: function(data){
+                    currentData = data;
+                    selectedCategory = data.categories[0];
+                    refreshDataPoints();
+                    map.attributionControl.addAttribution('Data &copy; <a href="http://daten.bremen.de/">Bremen</a>');
+                    $('#categorySelect option').remove();
+                    $('#datasetSelect option').remove();
+                    $('#columnSelect option').remove();
 
-                for (var i=0; i<data.categories.length; i++) {
-                    var category = data.categories[i];
-                    $('#categorySelect').append('<option value="' + category + '"' + (category === selectedCategory ? ' selected' : '') + '>' + category + '</option>');
+                    for (var i=0; i<data.categories.length; i++) {
+                        var category = data.categories[i];
+                        $('#categorySelect').append('<option value="' + category + '"' + (category === selectedCategory ? ' selected' : '') + '>' + category + '</option>');
+                    }
+                    var columnOptions = [];
+                    for(var i=0; i<data.columns.length; i++) {
+                        var column = data.columns[i];
+                        $('#columnSelect').append('<option value="' + i + '"' + (i === selectedColumn ? ' selected' : '') + '>' + column + '</option>');
+                    }
+                    var datasetOptions = [];
+                    for(var i=0; i<data.datasets.length; i++) {
+                        var dataset = data.datasets[i];
+                        $('#datasetSelect').append('<option value="' + dataset.id + '"' + (selectedDataset == dataset.id ? ' selected' : '') + '>' + dataset.label + '</option>');
+                    }
+                    $('#categorySelect').change(function() {
+                        selectedCategory = $('#categorySelect').val();
+                        refreshDataPoints();
+                    });
+                    $('#columnSelect').change(function() {
+                        var val = $('#columnSelect').val();
+                        selectedColumn = val;
+                        refreshDataPoints();
+                    });
+                    $('#datasetSelect').change(function() {
+                        var val = $('#datasetSelect').val();
+                        loadDataset(val);
+                    });
+                    $('#bar').show();
                 }
-                var columnOptions = [];
-                for(var i=0; i<data.columns.length; i++) {
-                    var column = data.columns[i];
-                    $('#columnSelect').append('<option value="' + i + '"' + (i === selectedColumn ? ' selected' : '') + '>' + column + '</option>');
-                }
-                var datasetOptions = [];
-                for(var i=0; i<data.datasets.length; i++) {
-                    var dataset = data.datasets[i];
-                    $('#datasetSelect').append('<option value="' + dataset.id + '"' + (selectedDataset == dataset.id ? ' selected' : '') + '>' + dataset.label + '</option>');
-                }
-                $('#categorySelect').change(function() {
-                    selectedCategory = $('#categorySelect').val();
-                    refreshDataPoints();
-                });
-                $('#columnSelect').change(function() {
-                    var val = $('#columnSelect').val();
-                    selectedColumn = val;
-                    refreshDataPoints();
-                });
-                $('#datasetSelect').change(function() {
-                    var val = $('#datasetSelect').val();
-                    loadDataset(val);
-                });
-                $('#bar').show();
             });
         }
-        
-
-
 	</script>
 </body>
 </html>
