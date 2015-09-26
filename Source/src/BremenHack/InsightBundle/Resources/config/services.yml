@@ -71,8 +71,10 @@ parameters:
                 "401125#Woltmershausen":
                     - 4011251#Woltmershausen
                     - 4011252#Rablinghausen
-#                "4011261#Seehausen"
-#                "4011271#Strom"
+                "4011261#Seehausen":
+                    - 4011261#Seehausen
+                "4011271#Strom":
+                    - 4011271#Strom
             "40113#Ost":
                 "401131#Oestliche Vorstadt":
                     - 4011311#Steintor
