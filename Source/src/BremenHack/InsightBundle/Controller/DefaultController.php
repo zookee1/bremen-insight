@@ -96,7 +96,11 @@ class DefaultController extends Controller
         } else {
             $result = [];
             foreach($array AS $key => $value) {
-                $result = array_merge($result, $this->extractArrayLevel($value, $level - 1));
+                if(is_array($value)) {
+                    $result = array_merge($result, $this->extractArrayLevel($value, $level - 1));
+                } else {
+                    $result[] = $value;
+                }
             }
             return $result;
         }
@@ -105,8 +109,7 @@ class DefaultController extends Controller
     public function isLineRelevantForFeature($name, $locationKey, $level)
     {
         $mappings = $this->getParameter('bremenMapping');
-
-        $results = $this->extractArrayLevel($mappings, $level === 10 ? 3 : 4);
+        $results = $this->extractArrayLevel($mappings, $level == 10 ? 3 : 4);
 
         foreach($results as $result) {
             $parts = explode('#', $result);

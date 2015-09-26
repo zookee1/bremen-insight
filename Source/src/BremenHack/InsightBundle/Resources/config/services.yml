@@ -38,7 +38,7 @@ parameters:
     "4#Bremen":
         "4011#Stadt Bremen":
             "40111#Mitte Bezirk":
-                "401111#Mitte Stadteil":
+                "401111#Mitte":
                     - 4011111#Altstadt
                     - 4011112#Bahnhofsvorstadt
                     - 4011113#Ostertor
@@ -63,7 +63,7 @@ parameters:
                     - 4011232#Arsten
                     - 4011233#Kattenturm
                     - 4011234#Kattenesch
-                "401124#Huchtingen":
+                "401124#Huchting":
                     - 4011241#Mittelshuchtingen
                     - 4011242#Sodenmatt
                     - 4011243#Kirchhuchtingen
@@ -98,6 +98,8 @@ parameters:
                     - 4011341#Horm
                     - 4011342#Lehe
                     - 4011343#Lehesterdeich
+                    - 4011351#Borgfeld
+                "4011351#Borgfeld":
                     - 4011351#Borgfeld
                 "401136#Oberneuland":
                     - 4011361#Oberneuland
