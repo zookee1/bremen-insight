@@ -114,7 +114,7 @@
 <body>
 	<div id="map"></div>
     <div class="bar" id="bar">
-        <a href="/"><img src="/bundles/bremenhackinsight/images/logo.svg" alt="bremen insights logo" class="logo"></a>
+        <a id="levelSwitcher" href="#"><img src="/bundles/bremenhackinsight/images/logo.svg" alt="bremen insights logo" class="logo"></a>
 
         <div class="control__item">
             <label class="control__label">Datensatz</label>
@@ -140,7 +140,7 @@
 	<script type="text/javascript">
 
 		var map = L.map('map').setView([53.083333, 8.8], 10);
-        var selectedCategory, selectedColumn = 0, selectedDataset, currentData, legend, controls;
+        var selectedCategory, selectedColumn = 0, selectedDataset, selectedLevel, currentData, legend, controls;
 
 		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
 			maxZoom: 18,
@@ -286,12 +286,13 @@
             legend.addTo(map);
         }
 
-        loadDataset('17397');
+        loadDataset('17397', 10);
 
-        function loadDataset(id) {
+        function loadDataset(id, level) {
             $('#bar').hide();
             selectedDataset = id;
-            $.ajax('/geojson/' + selectedDataset + '/11').error(function(err) {
+            selectedLevel = level;
+            $.ajax('/geojson/' + selectedDataset + '/' + selectedLevel).error(function(err) {
                 console.log(err);
                 alert("fail!");
             }).done(function(data) {
@@ -333,7 +334,11 @@
                 $('#bar').show();
             });
         }
-        
+
+
+        $('#levelSwitcher').click(function() {
+           loadDataset(selectedDataset, selectedLevel == 10 ? 11 : 10);
+        });
 
 
 	</script>
