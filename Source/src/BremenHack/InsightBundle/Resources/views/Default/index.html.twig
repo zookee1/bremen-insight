@@ -118,19 +118,19 @@
 
         <div class="control__item">
             <label class="control__label">Datensatz</label>
-            <select>
+            <select id="datasetSelect">
                 <option>Durschnittsalter 2030</option>
             </select>
         </div>
         <div class="control__item">
             <label class="control__label">Dimension</label>
-            <select>
+            <select id="columnSelect">
                 <option>Neugeborene</option>
             </select>
         </div>
         <div class="control__item">
             <label class="control__label">Filter</label>
-            <select>
+            <select id="categorySelect">
                 <option>männlich</option>
             </select>
         </div>
@@ -289,74 +289,48 @@
         loadDataset('17397');
 
         function loadDataset(id) {
-            console.log("loading ", id);
+            $('#bar').hide();
             selectedDataset = id;
             $.ajax('/geojson/' + selectedDataset + '/11').error(function(err) {
                 console.log(err);
-                map.clear();
-
+                alert("fail!");
             }).done(function(data) {
                 currentData = data;
                 selectedCategory = data.categories[0];
                 refreshDataPoints();
                 map.attributionControl.addAttribution('Data &copy; <a href="http://daten.bremen.de/">Bremen</a>');
-                if(controls) {
-                    controls.removeFrom(map);
+                $('#categorySelect option').remove();
+                $('#datasetSelect option').remove();
+                $('#columnSelect option').remove();
+
+                for (var i=0; i<data.categories.length; i++) {
+                    var category = data.categories[i];
+                    $('#categorySelect').append('<option value="' + category + '"' + (category === selectedCategory ? ' selected' : '') + '>' + category + '</option>');
                 }
-                controls = L.control({position: 'bottomleft'});
-                controls.onAdd = function (map) {
-                    var div = L.DomUtil.create('div', 'info legend');
-
-                    var items = [];
-                    for (var i=0; i<data.categories.length; i++) {
-                        var category = data.categories[i];
-                        items.push('<input id="radio' + category + '" type="radio" name="category" value="' + category + '" ' + (category === selectedCategory ? 'checked' : '') + '>&nbsp;<label for="radio' + category + '">' + category + '</label>');
-                    }
-
-                    var columnOptions = [];
-
-                    for(var i=0; i<data.columns.length; i++) {
-                        var column = data.columns[i];
-                        columnOptions.push('<option value="' + i + '">' + column + '</option>');
-                    }
-
-                    var columnSelect = L.DomUtil.create('select');
-                    columnSelect.innerHTML = columnOptions.join('');
-
-                    var datasetOptions = [];
-
-                    for(var i=0; i<data.datasets.length; i++) {
-                        var dataset = data.datasets[i];
-                        datasetOptions.push('<option value="' + dataset.id + '" ' + (selectedDataset == dataset.id ? 'selected' : '') + '>' + dataset.label + '</option>');
-                    }
-
-                    var datasetSelect = L.DomUtil.create('select');
-                    datasetSelect.innerHTML = datasetOptions.join('');
-
-                    div.innerHTML = items.join('<br>') + '<br>';
-                    $(div).find('input').click(function(event) {
-                        var target = $(event.target);
-                        selectedCategory = target.val();
-                        refreshDataPoints();
-                    });
-
-                    $(div).append(datasetSelect);
-                    $(div).append('<br>');
-                    $(div).append(columnSelect);
-                    $(columnSelect).change(function(event) {
-                        var val = $(columnSelect).val();
-                        selectedColumn = val;
-                        refreshDataPoints();
-                    });
-                    $(datasetSelect).change(function(event) {
-                        var val = $(datasetSelect).val();
-                        loadDataset(val);
-                    });
-
-                    return div;
-                };
-
-                controls.addTo(map);
+                var columnOptions = [];
+                for(var i=0; i<data.columns.length; i++) {
+                    var column = data.columns[i];
+                    $('#columnSelect').append('<option value="' + i + '"' + (i === selectedColumn ? ' selected' : '') + '>' + column + '</option>');
+                }
+                var datasetOptions = [];
+                for(var i=0; i<data.datasets.length; i++) {
+                    var dataset = data.datasets[i];
+                    $('#datasetSelect').append('<option value="' + dataset.id + '"' + (selectedDataset == dataset.id ? ' selected' : '') + '>' + dataset.label + '</option>');
+                }
+                $('#categorySelect').change(function() {
+                    selectedCategory = $('#categorySelect').val();
+                    refreshDataPoints();
+                });
+                $('#columnSelect').change(function() {
+                    var val = $('#columnSelect').val();
+                    selectedColumn = val;
+                    refreshDataPoints();
+                });
+                $('#datasetSelect').change(function() {
+                    var val = $('#datasetSelect').val();
+                    loadDataset(val);
+                });
+                $('#bar').show();
             });
         }
         
