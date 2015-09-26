@@ -12,7 +12,7 @@ class DefaultController extends Controller
         return $this->render('BremenHackInsightBundle:Default:index.html.twig');
     }
 
-    public function geojsonAction($id)
+    public function geojsonAction($id, $level)
     {
         $datasets = $this->getParameter('datasets');
         if(!array_key_exists($id, $datasets)) {
@@ -23,7 +23,7 @@ class DefaultController extends Controller
         $csv = array_map(function($line) {
             return str_getcsv(utf8_encode($line), ';');
         }, file($dataFolder . $dataset['filename']));
-        $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-10.geojson'), true);
+        $geojson = json_decode(file_get_contents($dataFolder . 'bremen-level-' . $level . '.geojson'), true);
 
         $controlColumn = $dataset['controlColumn'];
 
@@ -44,7 +44,16 @@ class DefaultController extends Controller
 
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
-        $geojson['columnMinima'] = array_fill(0, count($columns), 0);
+        $geojson['columnMinima'] = array_fill(0, count($columns), 99999999999);
+        $geojson['datasets'] = [];
+
+        foreach($datasets as $key => $datasetData) {
+            $geojson['datasets'][] = [
+                'id' => $key,
+                'label' => $datasetData['name']
+            ];
+        }
+
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
@@ -55,7 +64,7 @@ class DefaultController extends Controller
                 if(count($line) < 3) {
                     continue;
                 }
-                if(strpos($line[1], $name) !== FALSE) {
+                if($this->isLineRelevantForFeature($name, $line[0], $level)) {
                     $feature['properties']['locationKey'] = $line[0];
                     $key = $line[$controlColumn];
                     $results[$key] = array_map(function($point) {
@@ -81,35 +90,34 @@ class DefaultController extends Controller
         return $response;
     }
 
-    public function isLineRelevantForFeature($name, $locationKey)
-    {
-        if(!is_numeric($locationKey)){
-            return false;
+    private function extractArrayLevel($array, $level) {
+        if($level === 0) {
+            return isset($array[0]) ? array_values($array) : array_keys($array);
+        } else {
+            $result = [];
+            foreach($array AS $key => $value) {
+                $result = array_merge($result, $this->extractArrayLevel($value, $level - 1));
+            }
+            return $result;
         }
-        return $this->getBremenMapping($name, 10);
     }
 
-    public function getBremenMapping($name, $administrationLevel)
+    public function isLineRelevantForFeature($name, $locationKey, $level)
     {
-        $bremenMapping = $this->getParameter('bremenMapping');
-        echo $this->extractColumnFromArray($bremenMapping, $administrationLevel);
+        $mappings = $this->getParameter('bremenMapping');
+
+        $results = $this->extractArrayLevel($mappings, $level === 10 ? 3 : 4);
+
+        foreach($results as $result) {
+            $parts = explode('#', $result);
+            $lkey = $parts[0];
+            $lname = $parts[1];
+
+            if($lname == $name && (int) $lkey === (int) $locationKey) {
+                return true;
+            }
+        }
         return false;
-    }
-
-    public function extractColumnFromArray($array, $administrationLevel) {
-        if($administrationLevel === 10)
-        {
-            $array_keys = array_keys($array['4#Bremen']['4011#Stadt Bremen']);
-
-        }
-        else if($administrationLevel === 11)
-        {
-            $array_keys = array_keys($array['Bremen']['4']['Stadt Bremen']['4011']['Mitte Bezirk']);
-        }
-
-        echo '<pre>';
-        print_r($array_keys);
-        exit;
     }
 
 }
