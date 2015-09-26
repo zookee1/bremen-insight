@@ -2,3 +2,16 @@ services:
 #    bremen_hack_insight.example:
 #        class: BremenHack\InsightBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+
+
+
+parameters:
+  datasets:
+    "17397":
+      name: Vorausschätzung: Durchschnittsalter nach Geschlecht 2030 in Bremen
+      filename: 17397.csv
+      csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17397
+      info: http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17283.de&asl=bremen02.c.734.de
+
+
+  bremenMapping:
