@@ -7,12 +7,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="/bundles/bremenhackinsight/css/leaflet.css" />
+	<link rel="stylesheet" href="http://leafletjs.com/docs/highlight/styles/github-gist.css" />
 
 	<style>
 		#map {
 			width: 800px;
 			height: 500px;
 		}
+
+        .leaflet-marker-icon {
+            display: none;
+        }
+
+        .leaflet-marker-shadow {
+            display: none;
+        }
 
 		.info {
 			padding: 6px 8px;
@@ -74,8 +83,9 @@
 		};
 
 		info.update = function (props) {
+            console.log("props", props);
 			this._div.innerHTML = '<h4>Bremen Insight Test</h4>' +  (props ?
-				'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+				'<b>' + props.name + '</b><br />' + props.ref + ' people / mi<sup>2</sup>'
 				: 'Hover over a state');
 		};
 
@@ -101,7 +111,7 @@
 				color: 'white',
 				dashArray: '3',
 				fillOpacity: 0.7,
-				fillColor: getColor(feature.properties.density)
+				fillColor: getColor(feature.properties.ref)
 			};
 		}
 
