@@ -1,7 +1,7 @@
 services:
 #    bremen_hack_insight.example:
 #        class: BremenHack\InsightBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+#        arguments: [@service_id, "plain_valü", %parameter%]
 
 
 
@@ -10,7 +10,7 @@ parameters:
     "17397":
       name: Vorausschätzung: Durchschnittsalter nach Geschlecht 2030 in Bremen
       filename: 17397.csv
-      csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17397
+      csv: http://www.statistik-bremen.de/söv/abfrage_csv.cfm?tabelle=17397
       info: http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17283.de&asl=bremen02.c.734.de
       controlColumn: 3
       labelRow: 2
@@ -19,7 +19,7 @@ parameters:
     "17355":
       name: Bevölkerung nach Migrationsstatus, Geschlecht und Altersgruppen
       filename: 17355.csv
-      csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17355
+      csv: http://www.statistik-bremen.de/söv/abfrage_csv.cfm?tabelle=17355
       info: http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17184.de&asl=bremen02.c.734.de
       controlColumn: 3
       labelRow: 2
@@ -28,7 +28,7 @@ parameters:
     "17322":
       name: Durchschnittliches Alter der Bevölkerung Bremen
       filename: 17322.csv
-      csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17322
+      csv: http://www.statistik-bremen.de/söv/abfrage_csv.cfm?tabelle=17322
       info:   http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17224.de&asl=bremen02.c.734.de
       controlColumn: 2
       labelRow: 3
@@ -42,21 +42,21 @@ parameters:
                     - 4011111#Altstadt
                     - 4011112#Bahnhofsvorstadt
                     - 4011113#Ostertor
-                "401112#Haefen":
-                    - 4011121#Handelshaefen
-                    - 4011122#Industriehaefen
-                    - 4011123#Stadtbr Ueberseehafengebiet Bremerhaven
-                    - 4011124#Neustaedter Hafen
+                "401112#Häfen":
+                    - 4011121#Handelshäfen
+                    - 4011122#Industriehäfen
+                    - 4011123#Stadtbr Überseehafengebiet Bremerhaven
+                    - 4011124#Neustädter Hafen
                     - 4011125#Hohentorshafen
-            "40112#Sued":
+            "40112#Süd":
                 "401121#Neustadt":
                     - 4011211#Alte Neustadt
                     - 4011212#Hohentor
                     - 4011213#Neustadt
-                    - 4011214#Suedvorstadt
-                    - 4011215#Gartenstadt Sued
+                    - 4011214#Südvorstadt
+                    - 4011215#Gartenstadt Süd
                     - 4011216#Buntentor
-                    - 4011217#Neuenland
+                    - 4011217#Neünland
                     - 4011218#Huckelriede
                 "401123#Obervieland":
                     - 4011231#Habenhausen
@@ -76,14 +76,14 @@ parameters:
                 "4011271#Strom":
                     - 4011271#Strom
             "40113#Ost":
-                "401131#Oestliche Vorstadt":
+                "401131#Östliche Vorstadt":
                     - 4011311#Steintor
                     - 4011312#Fesenfeld
                     - 4011313#Peterswerder
                     - 4011314#Hulsberg
                 "401132#Schwachhausen":
                     - 4011321#Neu Schwachhausen
-                    - 4011322#Buergerpark
+                    - 4011322#Bürgerpark
                     - 4011323#Barkhof
                     - 4011324#Riensberg
                     - 4011325#Radio Bremen
@@ -91,9 +91,68 @@ parameters:
                     - 4011327#Gete
                 "401133#Vahr":
                     - 4011331#Gartenstadt Vahr
-                    - 4011332#Neue Vahr Nord
-                    - 4011333#Neue Vahr Suedwest
-                    - 4011334#Neue Vahr Suedost
+                    - 4011332#Neü Vahr Nord
+                    - 4011333#Neü Vahr Südwest
+                    - 4011334#Neü Vahr Südost
+                "401134#Horn-Lehe":
+                    - 4011341#Horm
+                    - 4011342#Lehe
+                    - 4011343#Lehesterdeich
+                    - 4011351#Borgfeld
+                "401136#Oberneuland":
+                    - 4011361#Oberneuland
+                "401137#Osterholz":
+                    - 4011371#Ellener Feld
+                    - 4011372#Ellenerbrok-Schevemoor
+                    - 4011373#Tenever
+                    - 4011374#Osterholz
+                    - 4011375#Blockdiek
+                "401138#Hemelingen":
+                    - 4011381#Sebaldsbrück
+                    - 4011382#Hastedt
+                    - 4011383#Hemelingen
+                    - 4011384#Arbergen
+                    - 4011385#Mahndorf
+            "40114#West":
+                "4011411#Blockland":
+                    - 4011411#Blockland
+                "401142#Findorff":
+                    - 4011421#Regensburger Straße
+                    - 4011422#Findorff-Bürgerweide
+                    - 4011423#Weidedamm
+                    - 4011424#In den Hufen
+                "401143#Walle":
+                    - 4011431#Utbremen
+                    - 4011432#Steffensweg
+                    - 4011433#Westend
+                    - 4011434#Walle
+                    - 4011435#Osterfeürberg
+                    - 4011436#Hohweg
+                    - 4011437#Überseestadt
+                "401144#Gröpelingen":
+                    - 4011441#Lindenhof
+                    - 4011442#Gröpelingen
+                    - 4011443#Ohlendorf
+                    - 4011444#In den Wischen
+                    - 4011445#Oslebshausen
+            "40115#Nord":
+                "401151#Burglesum":
+                    - 4011511#Burg-Grampke
+                    - 4011512#Lesum
+                    - 4011513#St Magnus
+                "401152#Vegesack":
+                    - 4011521#Vegesack
+                    - 4011522#Grohn
+                    - 4011523#Schönebeck
+                    - 4011524#Aumund-Hammersbeck
+                    - 4011525#Fähr-Lobbendorf
+                "401153#Blumenthal":
+                    - 4011531#Blumenthal
+                    - 4011532#Rönnebeck
+                    - 4011533#Lüssum-Bockhorn
+                    - 4011534#Farge
+                    - 4011535#Rekum
 
-
+        "4012#Stadt Bremerhaven":
+            - 4012#Stadt Bremerhaven
 
