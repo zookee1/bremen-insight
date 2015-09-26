@@ -15,3 +15,77 @@ parameters:
 
 
   bremenMapping:
+    "Bremen":
+      4:
+        "Stadt Bremen":
+          4011:
+            "Mitte Bezirk":
+              40111:
+                "Mitte Stadteil":
+                  401111:
+                    "Altstadt": 4011111
+                    "Bahnhofsvorstadt": 4011112
+                    "Ostertor": 4011113
+                "Haefen":
+                  401112:
+                    "Handelshaefen": 40111
+                    "Industriehaefen": 4011122
+                    "Stadtbr Ueberseehafengebiet Bremerhaven": 4011123
+                    "Neustaedter Hafen": 4011124
+                    "Hohentorshafen": 4011125
+              "Sued":
+                40112:
+                  "Neustadt":
+                    401121:
+                      "Alte Neustadt": 4011211
+                      "Hohentor": 4011212
+                      "Neustadt": 4011213
+                      "Suedvorstadt": 4011214
+                      "Gartenstadt Sued": 4011215
+                      "Buntentor": 4011216
+                      "Neuenland": 4011217
+                      "Huckelriede": 4011218
+                  "Obervieland":
+                    401123:
+                      "Habenhausen": 4011231
+                      "Arsten": 4011232
+                      "Kattenturm": 4011233
+                      "Kattenesch": 4011234
+                  "Huchtingen":
+                    401124:
+                      "Mittelshuchtingen": 4011241
+                      "Sodenmatt": 4011242
+                      "Kirchhuchtingen": 4011243
+                      "Grolland": 4011244
+                  "Woltmershausen":
+                    401125:
+                      "Woltmershausen": 4011251
+                      "Rablinghausen": 4011252
+                  "Seehausen": 4011261
+                  "Strom": 4011271
+              "Ost":
+                40113:
+                  "Oestliche Vorstadt":
+                    401131:
+                      "Steintor": 4011311
+                      "Fesenfeld": 4011312
+                      "Peterswerder": 4011313
+                      "Hulsberg": 4011314
+                  "Schwachhausen":
+                    401132:
+                      "Neu Schwachhausen": 4011321
+                      "Buergerpark": 4011322
+                      "Barkhof": 4011323
+                      "Riensberg": 4011324
+                      "Radio Bremen": 4011325
+                      "Schwachhausen": 401132
+                      "Gete": 401132
+                  "Vahr":
+                    401133:
+                      "Gartenstadt Vahr": 4011331
+                      "Neue Vahr Nord": 4011332
+                      "Neue Vahr Suedwest": 4011333
+                      "Neue Vahr Suedost": 4011334
+
+
+
