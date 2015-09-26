@@ -17,15 +17,19 @@ parameters:
 
 
     "17355":
-      name: asdf
+      name: Bevölkerung nach Migrationsstatus, Geschlecht und Altersgruppen
       filename: 17355.csv
+      csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17355
+      info: http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17184.de&asl=bremen02.c.734.de
       controlColumn: 3
       labelRow: 2
 
 
     "17322":
-      name: asdf
+      name: Durchschnittliches Alter der Bevölkerung Bremen
       filename: 17322.csv
+      csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17322
+      info:   http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17224.de&asl=bremen02.c.734.de
       controlColumn: 2
       labelRow: 3
 

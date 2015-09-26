@@ -34,6 +34,9 @@ class DefaultController extends Controller
 
         $columns = array_reduce($columnRows, function($a, $b) {
             for($i=0; $i<count($a); $i++) {
+                if(!isset($b[$i])) {
+                    $b[$i] = '';
+                }
                 $b[$i] = $a[$i] . ' ' . $b[$i];
             }
             return $b;
@@ -42,6 +45,15 @@ class DefaultController extends Controller
         $geojson['columns'] = $columns;
         $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
         $geojson['columnMinima'] = array_fill(0, count($columns), 0);
+        $geojson['datasets'] = [];
+
+        foreach($datasets as $key => $datasetData) {
+            $geojson['datasets'][] = [
+                'id' => $key,
+                'label' => $datasetData['name']
+            ];
+        }
+
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
