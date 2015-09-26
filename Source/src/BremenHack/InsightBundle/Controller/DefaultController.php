@@ -27,6 +27,7 @@ class DefaultController extends Controller
 
         $columns = array_slice($csv[2], 4);
         $geojson['columns'] = $columns;
+        $geojson['columnMaxima'] = array_fill(0, count($columns), 0);
         foreach($geojson['features'] as &$feature) {
             if(!isset($feature['properties']['name'])) {
                 continue;
@@ -43,7 +44,11 @@ class DefaultController extends Controller
                     $results[$key] = array_map(function($point) {
                         return (float) str_replace(',', '.', $point);
                     }, array_slice($line, 4));
-
+                    for($i=0; $i<count($results[$key]); $i++) {
+                        if($results[$key][$i] > $geojson['columnMaxima'][$i]) {
+                            $geojson['columnMaxima'][$i] = $results[$key][$i];
+                        }
+                    }
                 }
             }
             $feature['properties']['dataPoints'] = $results;
