@@ -56,10 +56,8 @@
 </head>
 <body>
 	<div id="map"></div>
-
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="/bundles/bremenhackinsight/js/leaflet.js"></script>
-
-	<script type="text/javascript" src="/bundles/bremenhackinsight/js/bremen-level-10.js"></script>
 	<script type="text/javascript">
 
 		var map = L.map('map').setView([53.083333, 8.8], 10);
@@ -150,17 +148,16 @@
 				click: zoomToFeature
 			});
 		}
-
-		geojson = L.geoJson(statesData, {
-			style: style,
-			onEachFeature: onEachFeature
-		}).addTo(map);
-
-		map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
-
+        
+        $.ajax('/geojson/17397').done(function(data) {
+            geojson = L.geoJson(data, {
+                style: style,
+                onEachFeature: onEachFeature
+            }).addTo(map);
+            map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
+        });
 
 		var legend = L.control({position: 'bottomright'});
-
 		legend.onAdd = function (map) {
 
 			var div = L.DomUtil.create('div', 'info legend'),

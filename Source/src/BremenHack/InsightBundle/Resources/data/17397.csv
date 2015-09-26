@@ -1,0 +1,361 @@
+173-97: Vorausschätzung: Natürliche und räumliche Bevölkerungsbewegungen sowie Durchschnittsalter nach Geschlecht
+Gebietsschlüssel;Gebietseinheit;Zeit;Geschlecht;Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1);Komponenten der Bevölkerungsprognose 1)
+;;;;Lebendgeborene;Gestorbene;natürlicher Saldo;Zuzüge 2);Fortzüge 2);Wanderungssaldo;Gesamtsaldo;Bevölkerung am 31.12.;Durchschnittsalter (in Jahren)
+04;Land Bremen;2030;Männlich;2685;4018;-1333;.;.;854;-479;322684;44,5
+04;Land Bremen;2030;Weiblich;2535;3989;-1454;.;.;606;-848;327775;47,1
+04;Land Bremen;2030;Insgesamt;5220;8007;-2787;.;.;1460;-1327;650458;45,8
+04011;Stadt Bremen;2030;Männlich;2251;3244;-993;30954;30297;657;-336;270024;44,4
+04011;Stadt Bremen;2030;Weiblich;2125;3312;-1187;27975;27388;587;-599;275863;47,0
+04011;Stadt Bremen;2030;Insgesamt;4377;6556;-2180;58929;57685;1244;-935;545886;45,7
+040111;Mitte (Stadtbezirk);2030;Männlich;69;90;-21;1915;1919;-4;-25;9352;43,0
+040111;Mitte (Stadtbezirk);2030;Weiblich;66;95;-30;1402;1398;5;-25;8096;45,0
+040111;Mitte (Stadtbezirk);2030;Insgesamt;135;186;-51;3317;3317;0;-50;17447;43,9
+0401111;Mitte (Stadtteil);2030;Männlich;69;89;-20;1898;1903;-5;-25;9264;42,9
+0401111;Mitte (Stadtteil);2030;Weiblich;65;95;-30;1395;1390;5;-25;8044;45,0
+0401111;Mitte (Stadtteil);2030;Insgesamt;134;184;-50;3293;3293;0;-50;17307;43,9
+04011111;Altstadt (Ortsteil);2030;Männlich;12;16;-3;548;550;-3;-6;2159;42,9
+04011111;Altstadt (Ortsteil);2030;Weiblich;12;10;1;318;325;-7;-6;1417;43,2
+04011111;Altstadt (Ortsteil);2030;Insgesamt;24;26;-2;866;876;-10;-12;3575;43,1
+04011112;Bahnhofsvorstadt (Ortsteil);2030;Männlich;24;33;-9;710;711;-1;-9;2890;41,0
+04011112;Bahnhofsvorstadt (Ortsteil);2030;Weiblich;23;38;-16;488;480;7;-8;2389;43,7
+04011112;Bahnhofsvorstadt (Ortsteil);2030;Insgesamt;47;71;-24;1198;1191;7;-18;5279;42,2
+04011113;Ostertor (Ortsteil);2030;Männlich;33;41;-8;640;642;-2;-10;4215;44,3
+04011113;Ostertor (Ortsteil);2030;Weiblich;31;46;-15;589;585;5;-11;4239;46,2
+04011113;Ostertor (Ortsteil);2030;Insgesamt;64;87;-23;1230;1227;3;-21;8453;45,2
+0401112;Häfen (Stadtteil);2030;Männlich;0;1;-1;17;16;1;0;88;49,2
+0401112;Häfen (Stadtteil);2030;Weiblich;0;0;0;7;7;0;0;52;45,8
+0401112;Häfen (Stadtteil);2030;Insgesamt;1;2;-1;24;23;1;0;140;47,9
+04011121;Handelshäfen (Ortsteil);2030;Männlich;x;x;x;x;x;x;x;x;x
+04011121;Handelshäfen (Ortsteil);2030;Weiblich;x;x;x;x;x;x;x;x;x
+04011121;Handelshäfen (Ortsteil);2030;Insgesamt;x;x;x;x;x;x;x;x;x
+04011122;Industriehäfen (Ortsteil);2030;Männlich;0;1;0;11;11;0;0;42;47,2
+04011122;Industriehäfen (Ortsteil);2030;Weiblich;0;0;0;3;4;0;0;25;48,3
+04011122;Industriehäfen (Ortsteil);2030;Insgesamt;1;1;0;15;14;0;0;67;47,6
+04011123;Stadtbr Überseehafengebiet Bremerhaven (Ortsteil);2030;Männlich;.;.;.;.;.;.;.;.;.
+04011123;Stadtbr Überseehafengebiet Bremerhaven (Ortsteil);2030;Weiblich;.;.;.;.;.;.;.;.;.
+04011123;Stadtbr Überseehafengebiet Bremerhaven (Ortsteil);2030;Insgesamt;.;.;.;.;.;.;.;.;.
+04011124;Neustädter Häfen (Ortsteil);2030;Männlich;.;.;.;.;.;.;.;.;.
+04011124;Neustädter Häfen (Ortsteil);2030;Weiblich;.;.;.;.;.;.;.;.;.
+04011124;Neustädter Häfen (Ortsteil);2030;Insgesamt;.;.;.;.;.;.;.;.;.
+04011125;Hohentorshafen (Ortsteil);2030;Männlich;.;.;.;.;.;.;.;.;.
+04011125;Hohentorshafen (Ortsteil);2030;Weiblich;.;.;.;.;.;.;.;.;.
+04011125;Hohentorshafen (Ortsteil);2030;Insgesamt;.;.;.;.;.;.;.;.;.
+040112;Süd (Stadtbezirk);2030;Männlich;520;704;-184;7339;7231;108;-76;61378;43,8
+040112;Süd (Stadtbezirk);2030;Weiblich;491;726;-235;6447;6344;103;-132;62392;46,4
+040112;Süd (Stadtbezirk);2030;Insgesamt;1011;1430;-420;13786;13575;211;-209;123770;45,1
+0401121;Neustadt (Stadtteil);2030;Männlich;195;220;-24;3714;3736;-23;-47;22412;41,8
+0401121;Neustadt (Stadtteil);2030;Weiblich;184;210;-26;3205;3233;-28;-53;21852;43,9
+0401121;Neustadt (Stadtteil);2030;Insgesamt;380;430;-50;6919;6969;-50;-100;44265;42,9
+04011211;Alte Neustadt (Ortsteil);2030;Männlich;23;39;-16;657;650;7;-9;3340;43,4
+04011211;Alte Neustadt (Ortsteil);2030;Weiblich;22;49;-27;549;529;20;-7;3125;46,6
+04011211;Alte Neustadt (Ortsteil);2030;Insgesamt;45;88;-43;1206;1179;27;-16;6466;45,0
+04011212;Hohentor (Ortsteil);2030;Männlich;23;21;1;508;515;-7;-6;2484;39,5
+04011212;Hohentor (Ortsteil);2030;Weiblich;21;13;8;453;469;-15;-7;2149;39,1
+04011212;Hohentor (Ortsteil);2030;Insgesamt;44;34;10;961;983;-22;-13;4634;39,3
+04011213;Neustadt (Ortsteil);2030;Männlich;36;29;8;516;530;-14;-7;3566;41,5
+04011213;Neustadt (Ortsteil);2030;Weiblich;34;25;9;497;514;-17;-8;3767;43,0
+04011213;Neustadt (Ortsteil);2030;Insgesamt;70;53;17;1013;1044;-31;-14;7333;42,3
+04011214;Südervorstadt (Ortsteil);2030;Männlich;19;19;0;472;477;-5;-4;2602;40,9
+04011214;Südervorstadt (Ortsteil);2030;Weiblich;18;19;-1;421;428;-7;-8;2513;42,5
+04011214;Südervorstadt (Ortsteil);2030;Insgesamt;38;38;-1;893;905;-12;-12;5115;41,7
+04011215;Gartenstadt Süd (Ortsteil);2030;Männlich;20;24;-4;281;280;1;-3;2479;41,6
+04011215;Gartenstadt Süd (Ortsteil);2030;Weiblich;19;25;-6;247;246;1;-5;2656;45,6
+04011215;Gartenstadt Süd (Ortsteil);2030;Insgesamt;39;49;-10;528;526;2;-8;5135;43,6
+04011216;Buntentor (Ortsteil);2030;Männlich;32;29;4;550;562;-11;-8;3399;41,6
+04011216;Buntentor (Ortsteil);2030;Weiblich;31;25;6;505;519;-13;-8;3457;44,0
+04011216;Buntentor (Ortsteil);2030;Insgesamt;63;53;10;1056;1081;-25;-15;6856;42,8
+04011217;Neuenland (Ortsteil);2030;Männlich;5;7;-2;158;158;1;-1;752;42,8
+04011217;Neuenland (Ortsteil);2030;Weiblich;5;5;0;86;88;-2;-2;652;44,8
+04011217;Neuenland (Ortsteil);2030;Insgesamt;11;13;-2;245;246;-1;-3;1403;43,7
+04011218;Huckelriede (Ortsteil);2030;Männlich;36;52;-15;572;566;6;-9;3790;42,9
+04011218;Huckelriede (Ortsteil);2030;Weiblich;34;49;-15;445;440;6;-9;3533;45,2
+04011218;Huckelriede (Ortsteil);2030;Insgesamt;71;101;-30;1018;1006;12;-18;7323;44,0
+0401123;Obervieland (Stadtteil);2030;Männlich;131;229;-98;1569;1481;88;-10;17137;46,2
+0401123;Obervieland (Stadtteil);2030;Weiblich;124;251;-127;1432;1338;94;-34;18072;49,1
+0401123;Obervieland (Stadtteil);2030;Insgesamt;255;479;-225;3001;2820;182;-43;35209;47,7
+04011231;Habenhausen (Ortsteil);2030;Männlich;25;65;-41;524;485;38;-2;3933;50,2
+04011231;Habenhausen (Ortsteil);2030;Weiblich;23;66;-43;451;415;36;-6;4202;52,3
+04011231;Habenhausen (Ortsteil);2030;Insgesamt;48;131;-83;975;900;75;-8;8136;51,3
+04011232;Arsten (Ortsteil);2030;Männlich;27;58;-31;272;246;26;-5;4319;47,4
+04011232;Arsten (Ortsteil);2030;Weiblich;26;77;-51;284;241;42;-9;4752;50,8
+04011232;Arsten (Ortsteil);2030;Insgesamt;53;134;-82;555;487;68;-14;9071;49,2
+04011233;Kattenturm (Ortsteil);2030;Männlich;59;74;-15;584;573;11;-4;6285;43,5
+04011233;Kattenturm (Ortsteil);2030;Weiblich;56;66;-10;495;500;-5;-15;6390;45,8
+04011233;Kattenturm (Ortsteil);2030;Insgesamt;116;140;-25;1078;1072;6;-19;12675;44,7
+04011234;Kattenesch (Ortsteil);2030;Männlich;20;31;-11;190;178;12;1;2599;44,6
+04011234;Kattenesch (Ortsteil);2030;Weiblich;19;42;-24;203;183;20;-4;2728;48,8
+04011234;Kattenesch (Ortsteil);2030;Insgesamt;39;74;-35;393;360;32;-3;5328;46,8
+0401124;Huchting (Stadtteil);2030;Männlich;130;166;-36;1318;1294;23;-13;14178;43,6
+0401124;Huchting (Stadtteil);2030;Weiblich;122;188;-66;1181;1146;35;-31;15048;46,8
+0401124;Huchting (Stadtteil);2030;Insgesamt;252;354;-102;2499;2440;58;-44;29226;45,3
+04011241;Mittelshuchting (Ortsteil);2030;Männlich;54;55;-1;575;580;-5;-5;5600;41,2
+04011241;Mittelshuchting (Ortsteil);2030;Weiblich;51;52;-1;475;486;-11;-11;5570;44,2
+04011241;Mittelshuchting (Ortsteil);2030;Insgesamt;105;106;-1;1050;1066;-15;-17;11170;42,7
+04011242;Sodenmatt (Ortsteil);2030;Männlich;30;48;-18;270;257;13;-5;3083;45,9
+04011242;Sodenmatt (Ortsteil);2030;Weiblich;28;76;-48;277;236;41;-7;3561;51,5
+04011242;Sodenmatt (Ortsteil);2030;Insgesamt;58;124;-66;547;493;54;-12;6643;48,9
+04011243;Kirchhuchting (Ortsteil);2030;Männlich;37;43;-6;375;371;4;-2;3896;43,5
+04011243;Kirchhuchting (Ortsteil);2030;Weiblich;35;44;-10;333;332;1;-9;4210;45,6
+04011243;Kirchhuchting (Ortsteil);2030;Insgesamt;72;87;-16;708;703;5;-11;8106;44,6
+04011244;Grolland (Ortsteil);2030;Männlich;9;20;-12;98;87;11;-1;1600;48,1
+04011244;Grolland (Ortsteil);2030;Weiblich;8;16;-8;96;92;4;-4;1708;48,2
+04011244;Grolland (Ortsteil);2030;Insgesamt;17;37;-20;194;179;15;-5;3307;48,2
+0401125;Woltmershausen (Stadtteil);2030;Männlich;59;83;-24;696;679;17;-7;6908;44,6
+0401125;Woltmershausen (Stadtteil);2030;Weiblich;55;70;-14;588;588;0;-14;6683;46,0
+0401125;Woltmershausen (Stadtteil);2030;Insgesamt;114;152;-38;1284;1267;17;-22;13591;45,3
+04011251;Woltmershausen (Ortsteil);2030;Männlich;49;59;-10;552;548;4;-6;5433;43,7
+04011251;Woltmershausen (Ortsteil);2030;Weiblich;46;42;4;466;482;-16;-12;5135;44,3
+04011251;Woltmershausen (Ortsteil);2030;Insgesamt;95;101;-6;1019;1030;-12;-17;10568;44,0
+04011252;Rablinghausen (Ortsteil);2030;Männlich;10;24;-14;143;131;12;-2;1475;48,0
+04011252;Rablinghausen (Ortsteil);2030;Weiblich;9;28;-19;122;106;16;-3;1548;51,6
+04011252;Rablinghausen (Ortsteil);2030;Insgesamt;19;51;-33;265;237;28;-4;3023;49,9
+04011261;Seehausen (Ortsteil);2030;Männlich;4;5;-1;29;28;1;-1;515;43,8
+04011261;Seehausen (Ortsteil);2030;Weiblich;3;5;-1;27;26;1;0;519;47,5
+04011261;Seehausen (Ortsteil);2030;Insgesamt;7;10;-3;56;54;2;-1;1034;45,6
+04011271;Strom (Ortsteil);2030;Männlich;2;3;-1;14;12;2;1;228;46,2
+04011271;Strom (Ortsteil);2030;Weiblich;2;2;0;13;12;1;0;216;44,1
+04011271;Strom (Ortsteil);2030;Insgesamt;4;5;-1;27;24;3;1;444;45,1
+040113;Ost (Stadtbezirk);2030;Männlich;928;1290;-362;11741;11441;300;-63;109300;44,7
+040113;Ost (Stadtbezirk);2030;Weiblich;876;1381;-505;11389;11051;338;-167;115832;47,3
+040113;Ost (Stadtbezirk);2030;Insgesamt;1804;2671;-868;23130;22492;638;-230;225132;46,0
+0401131;Östliche Vorstadt (Stadtteil);2030;Männlich;129;140;-11;1988;1990;-1;-13;14587;43,7
+0401131;Östliche Vorstadt (Stadtteil);2030;Weiblich;121;145;-23;2026;2020;6;-17;15882;45,8
+0401131;Östliche Vorstadt (Stadtteil);2030;Insgesamt;250;285;-35;4015;4009;5;-30;30469;44,8
+04011311;Steintor (Ortsteil);2030;Männlich;30;30;1;548;550;-2;-2;3855;42,5
+04011311;Steintor (Ortsteil);2030;Weiblich;29;26;3;525;535;-10;-7;3767;43,2
+04011311;Steintor (Ortsteil);2030;Insgesamt;59;55;3;1073;1085;-12;-9;7622;42,9
+04011312;Fesenfeld (Ortsteil);2030;Männlich;36;26;9;531;544;-13;-3;3402;42,6
+04011312;Fesenfeld (Ortsteil);2030;Weiblich;34;24;10;618;631;-13;-4;3661;43,4
+04011312;Fesenfeld (Ortsteil);2030;Insgesamt;69;50;19;1150;1176;-26;-7;7063;43,0
+04011313;Peterswerder (Ortsteil);2030;Männlich;41;54;-13;524;517;7;-6;4738;45,0
+04011313;Peterswerder (Ortsteil);2030;Weiblich;39;70;-31;556;527;29;-2;5763;48,8
+04011313;Peterswerder (Ortsteil);2030;Insgesamt;80;124;-44;1080;1044;35;-9;10500;47,1
+04011314;Hulsberg (Ortsteil);2030;Männlich;22;30;-8;385;379;7;-1;2593;44,3
+04011314;Hulsberg (Ortsteil);2030;Weiblich;20;25;-5;327;326;1;-4;2691;46,1
+04011314;Hulsberg (Ortsteil);2030;Insgesamt;42;55;-13;712;705;7;-5;5284;45,2
+0401132;Schwachhausen (Stadtteil);2030;Männlich;182;192;-10;2225;2219;6;-4;18376;44,8
+0401132;Schwachhausen (Stadtteil);2030;Weiblich;172;214;-42;2430;2419;11;-30;20575;47,8
+0401132;Schwachhausen (Stadtteil);2030;Insgesamt;355;406;-52;4655;4638;17;-34;38951;46,4
+04011321;Neu-Schwachhausen (Ortsteil);2030;Männlich;31;29;2;359;361;-2;0;2907;43,0
+04011321;Neu-Schwachhausen (Ortsteil);2030;Weiblich;29;37;-8;396;394;2;-6;3280;46,5
+04011321;Neu-Schwachhausen (Ortsteil);2030;Insgesamt;60;66;-6;755;756;0;-6;6188;44,9
+04011322;Bürgerpark (Ortsteil);2030;Männlich;21;22;-1;264;263;1;0;2143;46,8
+04011322;Bürgerpark (Ortsteil);2030;Weiblich;20;23;-3;286;287;-1;-4;2362;48,7
+04011322;Bürgerpark (Ortsteil);2030;Insgesamt;41;45;-4;550;550;0;-4;4506;47,8
+04011323;Barkhof (Ortsteil);2030;Männlich;18;14;4;243;247;-4;0;1475;45,7
+04011323;Barkhof (Ortsteil);2030;Weiblich;17;13;4;316;323;-7;-3;1472;45,3
+04011323;Barkhof (Ortsteil);2030;Insgesamt;35;27;8;559;570;-11;-3;2948;45,5
+04011324;Riensberg (Ortsteil);2030;Männlich;25;33;-8;301;296;5;-2;2817;43,8
+04011324;Riensberg (Ortsteil);2030;Weiblich;24;45;-22;336;317;19;-3;3371;49,8
+04011324;Riensberg (Ortsteil);2030;Insgesamt;48;78;-29;637;613;24;-5;6188;47,1
+04011325;Radio Bremen (Ortsteil);2030;Männlich;37;37;1;417;419;-3;-2;3603;45,0
+04011325;Radio Bremen (Ortsteil);2030;Weiblich;35;38;-3;422;427;-5;-7;4018;46,7
+04011325;Radio Bremen (Ortsteil);2030;Insgesamt;73;75;-2;839;846;-7;-9;7620;45,9
+04011326;Schwachhausen (Ortsteil);2030;Männlich;17;16;1;202;203;-1;0;1613;44,9
+04011326;Schwachhausen (Ortsteil);2030;Weiblich;16;22;-6;214;210;4;-2;1889;48,4
+04011326;Schwachhausen (Ortsteil);2030;Insgesamt;34;39;-5;415;413;2;-3;3502;46,8
+04011327;Gete (Ortsteil);2030;Männlich;33;41;-8;439;429;10;1;3817;45,5
+04011327;Gete (Ortsteil);2030;Weiblich;31;36;-5;461;461;0;-5;4182;48,4
+04011327;Gete (Ortsteil);2030;Insgesamt;64;77;-13;900;890;10;-4;7999;47,0
+0401133;Vahr (Stadtteil);2030;Männlich;121;154;-33;1282;1256;26;-8;12804;43,9
+0401133;Vahr (Stadtteil);2030;Weiblich;114;161;-47;1251;1222;30;-17;13942;47,6
+0401133;Vahr (Stadtteil);2030;Insgesamt;234;315;-81;2533;2477;56;-25;26746;45,8
+04011331;Gartenstadt Vahr (Ortsteil);2030;Männlich;27;51;-24;331;307;23;-1;3726;46,8
+04011331;Gartenstadt Vahr (Ortsteil);2030;Weiblich;25;58;-32;323;296;26;-6;3922;50,5
+04011331;Gartenstadt Vahr (Ortsteil);2030;Insgesamt;52;109;-56;653;604;50;-7;7647;48,7
+04011332;Neue Vahr Nord (Ortsteil);2030;Männlich;45;34;10;417;429;-13;-3;3720;39,5
+04011332;Neue Vahr Nord (Ortsteil);2030;Weiblich;42;32;10;407;420;-13;-2;4075;41,8
+04011332;Neue Vahr Nord (Ortsteil);2030;Insgesamt;87;66;21;824;849;-25;-5;7794;40,7
+04011334;Neue Vahr Südwest (Ortsteil);2030;Männlich;18;32;-14;198;184;14;0;1838;47,8
+04011334;Neue Vahr Südwest (Ortsteil);2030;Weiblich;17;36;-19;206;191;16;-3;2267;53,1
+04011334;Neue Vahr Südwest (Ortsteil);2030;Insgesamt;34;68;-33;404;374;30;-4;4105;50,8
+04011335;Neue Vahr Südost (Ortsteil);2030;Männlich;31;37;-5;337;336;1;-4;3521;43,3
+04011335;Neue Vahr Südost (Ortsteil);2030;Weiblich;30;36;-6;315;315;0;-6;3678;47,5
+04011335;Neue Vahr Südost (Ortsteil);2030;Insgesamt;61;72;-11;652;651;1;-10;7199;45,5
+0401134;Horn-Lehe (Stadtteil);2030;Männlich;92;161;-69;1543;1480;63;-6;12674;44,4
+0401134;Horn-Lehe (Stadtteil);2030;Weiblich;87;230;-144;1547;1422;125;-18;13637;48,2
+0401134;Horn-Lehe (Stadtteil);2030;Insgesamt;179;391;-212;3091;2902;188;-24;26311;46,4
+04011341;Horn (Ortsteil);2030;Männlich;12;43;-31;203;175;28;-3;2240;50,1
+04011341;Horn (Ortsteil);2030;Weiblich;12;74;-62;251;192;59;-4;2642;54,4
+04011341;Horn (Ortsteil);2030;Insgesamt;24;117;-93;454;367;87;-7;4882;52,4
+04011342;Lehe (Ortsteil);2030;Männlich;25;49;-24;795;776;19;-5;4562;41,7
+04011342;Lehe (Ortsteil);2030;Weiblich;24;84;-60;749;692;57;-3;4730;47,0
+04011342;Lehe (Ortsteil);2030;Insgesamt;49;133;-84;1543;1468;76;-8;9291;44,4
+04011343;Lehesterdeich (Ortsteil);2030;Männlich;54;68;-14;546;530;16;3;5873;44,4
+04011343;Lehesterdeich (Ortsteil);2030;Weiblich;51;73;-22;547;538;10;-12;6265;46,4
+04011343;Lehesterdeich (Ortsteil);2030;Insgesamt;105;140;-35;1094;1067;26;-9;12138;45,4
+04011351;Borgfeld (Ortsteil);2030;Männlich;30;45;-15;236;236;0;-15;4437;46,6
+04011351;Borgfeld (Ortsteil);2030;Weiblich;28;43;-14;225;232;-7;-21;4653;46,3
+04011351;Borgfeld (Ortsteil);2030;Insgesamt;59;88;-29;461;468;-7;-36;9090;46,5
+0401136;Oberneuland (Stadtteil);2030;Männlich;43;94;-50;507;454;53;3;6227;48,1
+0401136;Oberneuland (Stadtteil);2030;Weiblich;41;94;-53;505;455;50;-3;6736;50,2
+0401136;Oberneuland (Stadtteil);2030;Insgesamt;84;187;-103;1011;909;103;0;12962;49,2
+04011361;Oberneuland (Ortsteil);2030;Männlich;43;94;-50;507;454;53;3;6227;48,1
+04011361;Oberneuland (Ortsteil);2030;Weiblich;41;94;-53;505;455;50;-3;6736;50,2
+04011361;Oberneuland (Ortsteil);2030;Insgesamt;84;187;-103;1011;909;103;0;12962;49,2
+0401137;Osterholz (Stadtteil);2030;Männlich;166;254;-89;1587;1502;85;-3;18552;44,3
+0401137;Osterholz (Stadtteil);2030;Weiblich;156;265;-109;1477;1396;81;-28;19413;46,8
+0401137;Osterholz (Stadtteil);2030;Insgesamt;322;519;-197;3064;2898;166;-31;37965;45,6
+04011371;Ellener Feld (Ortsteil);2030;Männlich;7;32;-25;154;129;25;0;1437;52,8
+04011371;Ellener Feld (Ortsteil);2030;Weiblich;7;44;-37;162;126;36;-2;1661;55,7
+04011371;Ellener Feld (Ortsteil);2030;Insgesamt;14;77;-62;316;255;61;-2;3098;54,4
+04011372;Ellenerbrok-Schevemoor (Ortsteil);2030;Männlich;55;77;-23;541;516;25;2;5904;44,4
+04011372;Ellenerbrok-Schevemoor (Ortsteil);2030;Weiblich;51;73;-22;500;487;14;-8;6184;46,3
+04011372;Ellenerbrok-Schevemoor (Ortsteil);2030;Insgesamt;106;151;-45;1041;1003;39;-6;12088;45,4
+04011373;Tenever (Ortsteil);2030;Männlich;61;69;-8;432;430;2;-6;5111;40,7
+04011373;Tenever (Ortsteil);2030;Weiblich;57;79;-22;396;381;14;-8;5470;43,8
+04011373;Tenever (Ortsteil);2030;Insgesamt;118;148;-31;828;811;17;-14;10581;42,3
+04011374;Osterholz (Ortsteil);2030;Männlich;15;33;-18;189;171;18;-1;2754;45,5
+04011374;Osterholz (Ortsteil);2030;Weiblich;14;33;-19;179;166;13;-6;2731;48,0
+04011374;Osterholz (Ortsteil);2030;Insgesamt;29;66;-37;368;337;31;-6;5485;46,7
+04011375;Blockdiek (Ortsteil);2030;Männlich;28;42;-14;271;256;15;1;3346;44,8
+04011375;Blockdiek (Ortsteil);2030;Weiblich;27;35;-9;240;236;4;-4;3367;47,1
+04011375;Blockdiek (Ortsteil);2030;Insgesamt;55;78;-22;511;492;19;-3;6713;46,0
+0401138;Hemelingen (Stadtteil);2030;Männlich;165;250;-85;2374;2305;68;-17;21642;44,8
+0401138;Hemelingen (Stadtteil);2030;Weiblich;156;230;-74;1927;1885;42;-32;20996;47,1
+0401138;Hemelingen (Stadtteil);2030;Insgesamt;321;480;-159;4301;4191;110;-49;42638;45,9
+04011381;Sebaldsbrück (Ortsteil);2030;Männlich;41;52;-11;522;513;9;-2;5031;44,3
+04011381;Sebaldsbrück (Ortsteil);2030;Weiblich;39;40;-1;442;449;-7;-8;4953;45,8
+04011381;Sebaldsbrück (Ortsteil);2030;Insgesamt;80;92;-12;964;962;2;-10;9984;45,0
+04011382;Hastedt (Ortsteil);2030;Männlich;39;58;-19;775;764;11;-8;5412;44,2
+04011382;Hastedt (Ortsteil);2030;Weiblich;37;61;-24;625;606;19;-5;5335;48,1
+04011382;Hastedt (Ortsteil);2030;Insgesamt;76;119;-43;1400;1370;30;-13;10747;46,1
+04011383;Hemelingen (Ortsteil);2030;Männlich;47;69;-22;674;658;17;-5;5509;43,2
+04011383;Hemelingen (Ortsteil);2030;Weiblich;45;61;-16;491;484;6;-10;4926;44,3
+04011383;Hemelingen (Ortsteil);2030;Insgesamt;92;130;-38;1165;1142;23;-15;10435;43,7
+04011384;Arbergen (Ortsteil);2030;Männlich;21;39;-18;182;167;15;-3;2872;46,5
+04011384;Arbergen (Ortsteil);2030;Weiblich;20;41;-22;176;158;18;-4;3044;50,3
+04011384;Arbergen (Ortsteil);2030;Insgesamt;41;80;-40;358;325;33;-7;5915;48,5
+04011385;Mahndorf (Ortsteil);2030;Männlich;17;33;-15;220;203;16;1;2819;47,8
+04011385;Mahndorf (Ortsteil);2030;Weiblich;16;27;-11;193;187;6;-5;2738;49,4
+04011385;Mahndorf (Ortsteil);2030;Insgesamt;33;59;-26;413;391;22;-4;5557;48,6
+040114;West (Stadtbezirk);2030;Männlich;393;521;-128;5552;5496;56;-72;44358;43,4
+040114;West (Stadtbezirk);2030;Weiblich;371;469;-98;4811;4798;13;-85;44000;45,4
+040114;West (Stadtbezirk);2030;Insgesamt;764;990;-226;10363;10294;69;-158;88358;44,4
+04011411;Blockland (Ortsteil);2030;Männlich;2;2;0;13;13;0;0;199;43,4
+04011411;Blockland (Ortsteil);2030;Weiblich;2;2;0;13;12;0;0;206;48,7
+04011411;Blockland (Ortsteil);2030;Insgesamt;4;4;-1;25;25;0;0;405;46,1
+0401142;Findorff (Stadtteil);2030;Männlich;95;150;-55;1374;1334;40;-15;12002;45,5
+0401142;Findorff (Stadtteil);2030;Weiblich;90;154;-64;1440;1399;41;-23;13190;47,8
+0401142;Findorff (Stadtteil);2030;Insgesamt;185;304;-119;2814;2734;81;-38;25192;46,7
+04011421;Regensburger Straße (Ortsteil);2030;Männlich;29;33;-4;403;405;-3;-7;3155;42,7
+04011421;Regensburger Straße (Ortsteil);2030;Weiblich;28;39;-11;436;428;8;-3;3514;45,8
+04011421;Regensburger Straße (Ortsteil);2030;Insgesamt;57;72;-15;839;833;6;-10;6669;44,4
+04011422;Findorff-Bürgerweide (Ortsteil);2030;Männlich;28;33;-5;476;475;0;-5;3238;42,0
+04011422;Findorff-Bürgerweide (Ortsteil);2030;Weiblich;26;21;5;467;479;-12;-7;3186;41,8
+04011422;Findorff-Bürgerweide (Ortsteil);2030;Insgesamt;54;54;0;942;954;-12;-12;6424;41,9
+04011423;Weidedamm (Ortsteil);2030;Männlich;38;82;-44;489;447;42;-2;5512;48,8
+04011423;Weidedamm (Ortsteil);2030;Weiblich;36;93;-57;532;487;45;-12;6423;51,7
+04011423;Weidedamm (Ortsteil);2030;Insgesamt;74;175;-101;1021;934;87;-14;11935;50,4
+04011424;In den Hufen (Ortsteil);2030;Männlich;0;2;-1;7;7;0;-1;97;60,1
+04011424;In den Hufen (Ortsteil);2030;Weiblich;0;1;-1;5;6;-1;-1;67;54,6
+04011424;In den Hufen (Ortsteil);2030;Insgesamt;0;2;-2;12;13;-1;-3;164;57,8
+0401143;Walle (Stadtteil);2030;Männlich;112;152;-41;1772;1757;15;-26;13886;43,2
+0401143;Walle (Stadtteil);2030;Weiblich;106;125;-19;1571;1579;-8;-28;13499;45,1
+0401143;Walle (Stadtteil);2030;Insgesamt;217;277;-60;3343;3336;7;-53;27385;44,1
+04011431;Utbremen (Ortsteil);2030;Männlich;13;14;-2;166;167;-1;-3;1564;41,0
+04011431;Utbremen (Ortsteil);2030;Weiblich;12;14;-2;151;152;-1;-3;1622;44,2
+04011431;Utbremen (Ortsteil);2030;Insgesamt;24;28;-3;317;319;-2;-6;3186;42,6
+04011432;Steffensweg (Ortsteil);2030;Männlich;17;22;-5;291;289;2;-3;2150;44,1
+04011432;Steffensweg (Ortsteil);2030;Weiblich;16;19;-3;254;256;-2;-5;2087;45,7
+04011432;Steffensweg (Ortsteil);2030;Insgesamt;33;42;-8;545;545;0;-8;4237;44,9
+04011433;Westend (Ortsteil);2030;Männlich;25;34;-9;498;493;5;-4;3318;42,8
+04011433;Westend (Ortsteil);2030;Weiblich;24;29;-6;435;436;-1;-7;3093;44,2
+04011433;Westend (Ortsteil);2030;Insgesamt;49;64;-15;933;929;4;-11;6411;43,5
+04011434;Walle (Ortsteil);2030;Männlich;31;47;-16;446;437;9;-7;3929;43,8
+04011434;Walle (Ortsteil);2030;Weiblich;30;39;-9;410;407;4;-6;3875;45,7
+04011434;Walle (Ortsteil);2030;Insgesamt;61;86;-25;856;844;12;-13;7804;44,7
+04011435;Osterfeuerberg (Ortsteil);2030;Männlich;23;27;-4;315;314;1;-3;2533;42,3
+04011435;Osterfeuerberg (Ortsteil);2030;Weiblich;22;21;1;280;286;-5;-4;2417;44,1
+04011435;Osterfeuerberg (Ortsteil);2030;Insgesamt;45;48;-3;595;600;-5;-8;4950;43,2
+04011436;Hohweg (Ortsteil);2030;Männlich;1;3;-3;12;13;-1;-3;134;53,8
+04011436;Hohweg (Ortsteil);2030;Weiblich;1;3;-2;12;13;-1;-3;128;55,7
+04011436;Hohweg (Ortsteil);2030;Insgesamt;1;6;-4;24;26;-2;-6;262;54,7
+04011437;Überseestadt (Ortsteil);2030;Männlich;2;3;-1;45;45;0;-1;256;48,7
+04011437;Überseestadt (Ortsteil);2030;Weiblich;2;1;1;28;29;-1;0;278;50,2
+04011437;Überseestadt (Ortsteil);2030;Insgesamt;3;4;0;73;74;-1;-1;534;49,5
+0401144;Gröpelingen (Stadtteil);2030;Männlich;184;216;-32;2393;2392;1;-31;18272;42,1
+0401144;Gröpelingen (Stadtteil);2030;Weiblich;174;188;-15;1787;1807;-20;-35;17104;43,8
+0401144;Gröpelingen (Stadtteil);2030;Insgesamt;357;404;-47;4180;4199;-19;-66;35376;42,9
+04011441;Lindenhof (Ortsteil);2030;Männlich;36;50;-14;634;629;5;-9;4303;42,8
+04011441;Lindenhof (Ortsteil);2030;Weiblich;34;45;-11;440;438;2;-9;3811;44,9
+04011441;Lindenhof (Ortsteil);2030;Insgesamt;70;95;-25;1075;1067;7;-18;8113;43,8
+04011442;Gröpelingen (Ortsteil);2030;Männlich;55;50;5;564;574;-10;-5;4472;41,3
+04011442;Gröpelingen (Ortsteil);2030;Weiblich;52;41;11;482;503;-22;-11;4478;42,5
+04011442;Gröpelingen (Ortsteil);2030;Insgesamt;106;90;16;1045;1077;-31;-16;8950;41,9
+04011443;Ohlenhof (Ortsteil);2030;Männlich;54;60;-6;661;665;-4;-10;5150;41,6
+04011443;Ohlenhof (Ortsteil);2030;Weiblich;51;49;2;487;499;-12;-10;4461;42,5
+04011443;Ohlenhof (Ortsteil);2030;Insgesamt;106;110;-4;1148;1164;-16;-20;9611;42,1
+04011444;In den Wischen (Ortsteil);2030;Männlich;.;.;.;.;.;.;.;.;.
+04011444;In den Wischen (Ortsteil);2030;Weiblich;.;.;.;.;.;.;.;.;.
+04011444;In den Wischen (Ortsteil);2030;Insgesamt;.;.;.;.;.;.;.;.;.
+04011445;Oslebshausen (Ortsteil);2030;Männlich;39;56;-17;534;525;10;-7;4344;42,9
+04011445;Oslebshausen (Ortsteil);2030;Weiblich;37;53;-17;378;366;12;-5;4352;45,3
+04011445;Oslebshausen (Ortsteil);2030;Insgesamt;76;110;-34;912;891;22;-12;8696;44,1
+040115;Nord (Stadtbezirk);2030;Männlich;341;638;-297;4408;4210;198;-99;45636;46,1
+040115;Nord (Stadtbezirk);2030;Weiblich;322;640;-318;3926;3797;128;-190;45543;48,7
+040115;Nord (Stadtbezirk);2030;Insgesamt;663;1279;-616;8334;8007;327;-289;91179;47,4
+0401151;Burglesum (Stadtteil);2030;Männlich;116;244;-127;1369;1278;92;-36;15272;46,8
+0401151;Burglesum (Stadtteil);2030;Weiblich;110;274;-164;1301;1198;103;-62;15700;50,5
+0401151;Burglesum (Stadtteil);2030;Insgesamt;226;518;-292;2670;2476;194;-97;30971;48,7
+04011511;Burg-Grambke (Ortsteil);2030;Männlich;22;46;-24;282;266;15;-9;3162;46,4
+04011511;Burg-Grambke (Ortsteil);2030;Weiblich;21;49;-28;252;234;18;-10;3170;50,0
+04011511;Burg-Grambke (Ortsteil);2030;Insgesamt;43;95;-52;534;501;33;-18;6331;48,2
+04011512;Werderland (Ortsteil);2030;Männlich;1;4;-3;12;9;3;0;181;50,3
+04011512;Werderland (Ortsteil);2030;Weiblich;1;2;0;12;12;0;0;166;48,8
+04011512;Werderland (Ortsteil);2030;Insgesamt;2;6;-3;25;21;3;0;347;49,6
+04011513;Burgdamm (Ortsteil);2030;Männlich;42;59;-18;441;436;5;-13;5007;44,9
+04011513;Burgdamm (Ortsteil);2030;Weiblich;39;59;-20;397;397;0;-21;5061;46,7
+04011513;Burgdamm (Ortsteil);2030;Insgesamt;81;119;-38;838;833;5;-33;10067;45,8
+04011514;Lesum (Ortsteil);2030;Männlich;31;86;-55;403;354;48;-6;4147;48,3
+04011514;Lesum (Ortsteil);2030;Weiblich;30;94;-64;386;342;44;-20;4231;52,5
+04011514;Lesum (Ortsteil);2030;Insgesamt;61;180;-119;789;696;93;-26;8379;50,4
+04011515;St  Magnus (Ortsteil);2030;Männlich;20;48;-28;232;212;20;-8;2776;48,4
+04011515;St  Magnus (Ortsteil);2030;Weiblich;19;71;-52;253;212;41;-12;3072;54,4
+04011515;St  Magnus (Ortsteil);2030;Insgesamt;39;119;-80;485;424;60;-19;5847;51,6
+0401152;Vegesack (Stadtteil);2030;Männlich;110;208;-99;1698;1631;67;-32;15752;46,3
+0401152;Vegesack (Stadtteil);2030;Weiblich;104;192;-88;1453;1438;15;-73;15347;48,3
+0401152;Vegesack (Stadtteil);2030;Insgesamt;213;400;-187;3152;3069;82;-105;31100;47,3
+04011521;Vegesack (Ortsteil);2030;Männlich;21;44;-23;349;335;15;-8;2927;48,2
+04011521;Vegesack (Ortsteil);2030;Weiblich;20;38;-18;322;318;4;-14;3187;50,9
+04011521;Vegesack (Ortsteil);2030;Insgesamt;41;82;-41;671;652;19;-22;6114;49,6
+04011522;Grohn (Ortsteil);2030;Männlich;21;34;-13;399;397;2;-11;2704;42,6
+04011522;Grohn (Ortsteil);2030;Weiblich;20;29;-9;340;344;-4;-13;2645;43,9
+04011522;Grohn (Ortsteil);2030;Insgesamt;42;63;-21;739;741;-2;-24;5348;43,2
+04011523;Schönebeck (Ortsteil);2030;Männlich;19;33;-13;233;222;10;-3;2543;46,1
+04011523;Schönebeck (Ortsteil);2030;Weiblich;18;35;-17;212;206;5;-12;2496;48,5
+04011523;Schönebeck (Ortsteil);2030;Insgesamt;38;68;-30;444;429;16;-15;5039;47,3
+04011524;Aumund-Hammersbeck (Ortsteil);2030;Männlich;24;46;-22;294;275;19;-3;3632;46,6
+04011524;Aumund-Hammersbeck (Ortsteil);2030;Weiblich;23;38;-15;259;259;0;-15;3472;47,4
+04011524;Aumund-Hammersbeck (Ortsteil);2030;Insgesamt;47;84;-36;553;534;19;-18;7104;47,0
+04011525;Fähr-Lobbendorf (Ortsteil);2030;Männlich;24;52;-28;423;401;22;-7;3947;47,2
+04011525;Fähr-Lobbendorf (Ortsteil);2030;Weiblich;22;52;-29;322;311;10;-19;3548;50,0
+04011525;Fähr-Lobbendorf (Ortsteil);2030;Insgesamt;46;104;-58;745;713;32;-26;7494;48,5
+0401153;Blumenthal (Stadtteil);2030;Männlich;115;187;-71;1340;1301;40;-32;14612;45,2
+0401153;Blumenthal (Stadtteil);2030;Weiblich;109;175;-66;1172;1161;10;-55;14496;47,4
+0401153;Blumenthal (Stadtteil);2030;Insgesamt;224;361;-137;2512;2462;50;-87;29108;46,3
+04011531;Blumenthal (Ortsteil);2030;Männlich;39;53;-14;468;465;3;-11;4532;43,2
+04011531;Blumenthal (Ortsteil);2030;Weiblich;37;45;-8;389;400;-10;-18;4416;45,2
+04011531;Blumenthal (Ortsteil);2030;Insgesamt;76;98;-22;857;865;-8;-29;8948;44,2
+04011532;Rönnebeck (Ortsteil);2030;Männlich;11;31;-21;187;171;16;-5;1980;48,2
+04011532;Rönnebeck (Ortsteil);2030;Weiblich;10;43;-32;179;155;25;-8;2028;53,5
+04011532;Rönnebeck (Ortsteil);2030;Insgesamt;21;74;-53;366;326;40;-12;4008;50,9
+04011533;Lüssum-Bockhorn (Ortsteil);2030;Männlich;48;70;-22;492;483;9;-13;5643;44,3
+04011533;Lüssum-Bockhorn (Ortsteil);2030;Weiblich;45;62;-17;425;430;-5;-22;5667;46,2
+04011533;Lüssum-Bockhorn (Ortsteil);2030;Insgesamt;93;132;-39;917;913;4;-35;11309;45,3
+04011534;Farge (Ortsteil);2030;Männlich;11;19;-7;121;116;5;-2;1370;47,2
+04011534;Farge (Ortsteil);2030;Weiblich;11;13;-2;110;111;-2;-4;1333;47,8
+04011534;Farge (Ortsteil);2030;Insgesamt;22;32;-9;231;228;3;-6;2704;47,5
+04011535;Rekum (Ortsteil);2030;Männlich;6;14;-8;72;65;7;0;1087;50,0
+04011535;Rekum (Ortsteil);2030;Weiblich;6;12;-6;69;66;3;-3;1052;50,3
+04011535;Rekum (Ortsteil);2030;Insgesamt;12;26;-14;141;131;10;-4;2139;50,1
+04012;Stadt Bremerhaven;2030;Männlich;434;774;-340;.;.;197;-143;52660;44,8
+04012;Stadt Bremerhaven;2030;Weiblich;409;677;-267;.;.;18;-249;51912;47,6
+04012;Stadt Bremerhaven;2030;Insgesamt;843;1450;-607;.;.;216;-392;104572;46,2
+
+1) Modellrechnung; Basiszeitpunkt 31.12.2013 (Fortschreibung auf Grundlage des Zensus 2011). Ohne Berücksichtigung geplanter Wohnungsbauvorhaben. Modellannahmen: siehe Begriffserläuterung > Bevölkerungsvorausschätzung.
+
+2) Über Ortsteilgrenzen.
+
+
+© Statistisches Landesamt Bremen

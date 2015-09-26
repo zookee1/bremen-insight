@@ -1,3 +1,7 @@
 bremen_hack_insight_homepage:
     path:     /
     defaults: { _controller: BremenHackInsightBundle:Default:index }
+
+bremen_hack_insight_geojson:
+    path:     /geojson/{id}
+    defaults: { _controller: BremenHackInsightBundle:Default:geojson }
