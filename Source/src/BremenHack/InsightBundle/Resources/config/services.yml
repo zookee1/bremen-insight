@@ -22,7 +22,7 @@ parameters:
       csv: http://www.statistik-bremen.de/soev/abfrage_csv.cfm?tabelle=17355
       info: http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen65.c.17184.de&asl=bremen02.c.734.de
       controlColumn: 3
-      labelRow: 2
+      labelRow: 3
 
 
     "17322":
