@@ -64,4 +64,5 @@ function levelSwitcher(){
 $(document).ready(function(){
     loadDataset('17397', 10);
     levelSwitcher();
+    addDevsMarker();
 });

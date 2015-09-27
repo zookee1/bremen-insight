@@ -5,7 +5,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="http://mapbox.com">Mapbox</a> ' +
+    'Imagery © <a href="http://mapbox.com">Mapbox</a>, ' +
     'Data &copy; <a href="http://daten.bremen.de/">Bremen</a>',
     id: 'mapbox.light'
 }).addTo(map);
@@ -21,7 +21,7 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Bremen Insight Test</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Bremen Insight</h4>' +  (props ?
         '<b>' + props.name + '</b><br />' + extractValue(props) + ' ' + currentData.columns[selectedColumn]
             : 'Hover over a Stadtteil');
 };
@@ -105,7 +105,9 @@ function getScala() {
         grades.push(minima + Math.floor((maxima-minima) / 8 * i));
     }
     return grades;
-}function refreshDataPoints() {
+}
+
+function refreshDataPoints() {
     if(geojson) {
         //geojson.removeFrom(map);
     }
@@ -142,4 +144,12 @@ function getScala() {
     };
 
     legend.addTo(map);
+}
+
+function addDevsMarker(){
+    $('#devs').click(function(){
+        L.marker([53.15, 8.8]).addTo(map)
+            .bindPopup('Made by: <br> <a href="http://dantz.me">Andreas Dantz</a> <br> Artur Hallmann <br> <a href="http://niklasmeyer.de">Niklas Meyer</a>')
+            .openPopup();
+    });
 }
