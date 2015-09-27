@@ -10,9 +10,11 @@ function loadDataset(id, level) {
         },
         beforeSend: function(){
             console.log('started');
+            $('#loading').show();
         },
         success: function(){
             console.log('success');
+            $('#loading').hide();
         }
     }).done(function(data){
         currentData = data;
