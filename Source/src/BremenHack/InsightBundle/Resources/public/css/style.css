@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 16px/1.4 sans-serif;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: .4em 3em .4em 0.6em;
+    background-image: url(/bundles/bremenhackinsight/images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
+}
+
+#map {
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.logo {
+    margin-right: 1em;
+    margin-bottom: -6px;
+}
+
+.leaflet-marker-icon {
+    display: none;
+}
+
+.leaflet-marker-shadow {
+    display: none;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+#map {
+    width: 100%;
+}
+
+.bar {
+    padding: 0.5em 1em;
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
+@media (min-width: 700px) {
+    .bar {
+        max-width: 1100px;
+        margin: 0 auto;
+        height: 60px;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.control__item {
+    padding: 0 0.5em;
+    flex: 1 0 150px;
+}
+
+.control__label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+#ninja {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1337;
+    height: 200px;
+    width: 200px;
+}
