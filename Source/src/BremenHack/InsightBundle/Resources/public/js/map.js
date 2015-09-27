@@ -163,7 +163,7 @@ function refreshDataPoints() {
 function addDevsMarker(){
     $('#devs').click(function(){
         L.marker([53.15, 8.8]).addTo(map)
-            .bindPopup('Made by: <br> <a href="http://dantz.me">Andreas Dantz</a> <br> Artur Hallmann <br> <a href="http://niklasmeyer.de">Niklas Meyer</a>')
+            .bindPopup('Made by <br> <a href="http://dantz.me">Andreas Dantz</a> <br> <a href="http://niklasmeyer.de">Niklas Meyer</a> <br> Artur Hallmann <br> <hr> Project on Github <br> <a href="http://github.com/niklasmeyer/bremen-insight">bremen-insight</a>')
             .openPopup();
     });
 }
