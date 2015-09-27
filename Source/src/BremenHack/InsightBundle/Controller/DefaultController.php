@@ -7,6 +7,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
+    protected $mappings;
+
     public function indexAction()
     {
         return $this->render('BremenHackInsightBundle:Default:index.html.twig');
@@ -18,6 +20,10 @@ class DefaultController extends Controller
         if(!array_key_exists($id, $datasets)) {
             throw new \Exception('not found: ' . $id);
         }
+
+        $mappings = $this->getParameter('bremenMapping');
+        $this->mappings = $this->extractArrayLevel($mappings, $level == 10 ? 3 : 4);
+
         $dataset = $datasets[$id];
         $dataFolder = __DIR__ . '/../Resources/data/';
         $csv = array_map(function($line) {
@@ -108,10 +114,7 @@ class DefaultController extends Controller
 
     public function isLineRelevantForFeature($name, $locationKey, $level)
     {
-        $mappings = $this->getParameter('bremenMapping');
-        $results = $this->extractArrayLevel($mappings, $level == 10 ? 3 : 4);
-
-        foreach($results as $result) {
+        foreach($this->mappings as $result) {
             $parts = explode('#', $result);
             $lkey = $parts[0];
             $lname = $parts[1];

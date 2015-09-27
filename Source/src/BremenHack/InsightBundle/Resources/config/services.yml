@@ -82,7 +82,7 @@ parameters:
                     - 4011313#Peterswerder
                     - 4011314#Hulsberg
                 "401132#Schwachhausen":
-                    - 4011321#Neu Schwachhausen
+                    - 4011321#Neu-Schwachhausen
                     - 4011322#Bürgerpark
                     - 4011323#Barkhof
                     - 4011324#Riensberg
@@ -139,9 +139,9 @@ parameters:
                     - 4011445#Oslebshausen
             "40115#Nord":
                 "401151#Burglesum":
-                    - 4011511#Burg-Grampke
+                    - 4011511#Burg-Grambke
                     - 4011512#Lesum
-                    - 4011513#St Magnus
+                    - 4011513#St. Magnus
                 "401152#Vegesack":
                     - 4011521#Vegesack
                     - 4011522#Grohn
