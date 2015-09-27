@@ -6,7 +6,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
     'Imagery © <a href="http://mapbox.com">Mapbox</a>, ' +
-    'Data &copy; <a href="http://daten.bremen.de/">Bremen</a>',
+    'Data &copy; <a href="http://daten.bremen.de/">Bremen</a>, ' +
+    'Made while participating <a href="http://2015.bremenhack.de/">#bremenhack</a>',
     id: 'mapbox.light'
 }).addTo(map);
 

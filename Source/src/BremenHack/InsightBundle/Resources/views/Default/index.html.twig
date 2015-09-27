@@ -6,13 +6,18 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="/bundles/bremenhackinsight/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="/bundles/bremenhackinsight/css/leaflet.css" />
 	<link rel="stylesheet" href="/bundles/bremenhackinsight/css/leaflet-gist-theme.css" />
 	<link rel="stylesheet" href="/bundles/bremenhackinsight/css/style.css" />
 
 </head>
 <body>
-	<div id="map"></div>
+	<div id="map">
+        <a href="/"><img src="/bundles/bremenhackinsight/images/logo.svg" alt="bremen insights logo" class="logo-mobile"></a>
+
+    </div>
     <div class="bar" id="bar">
         <a href="/"><img src="/bundles/bremenhackinsight/images/logo.svg" alt="bremen insights logo" class="logo"></a>
 
@@ -38,11 +43,12 @@
             <label class="control__label">Genauigkeit</label>
             <div class="wrap">
               
-              <input type="checkbox" id="s3" />
-              <label class="slider-v2" for="s3"></label>
+              <input id="levelSwitcher" type="checkbox" />
+              <label class="slider-v2" for="levelSwitcher"></label>
               
             </div>
         </div>
+        <img src="/bundles/bremenhackinsight/images/info.svg" id="devs" alt="">
     </div>
     <div id="ninja">
         　　 ∠￣ヽ

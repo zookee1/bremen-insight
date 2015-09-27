@@ -6,14 +6,11 @@ function loadDataset(id, level) {
         data: 'json',
         error: function(err){
             console.log(err);
-            alert("fail!");
         },
         beforeSend: function(){
-            console.log('started');
             $('#loading').show();
         },
         success: function(){
-            console.log('success');
             $('#loading').hide();
         }
     }).done(function(data){
