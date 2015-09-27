@@ -93,6 +93,7 @@ select {
     }
 
     .logo {
+        display: block;
         margin-right: 1em;
         margin-bottom: -6px;
     }
