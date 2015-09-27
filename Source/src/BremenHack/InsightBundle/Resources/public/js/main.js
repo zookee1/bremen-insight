@@ -11,47 +11,45 @@ function loadDataset(id, level) {
         beforeSend: function(){
             console.log('started');
         },
-        done: function(data){
-            console.log(1);
-            currentData = data;
-            selectedCategory = data.categories[0];
-            refreshDataPoints();
-            $('#categorySelect option').remove();
-            $('#datasetSelect option').remove();
-            $('#columnSelect option').remove();
-
-            for (var i=0; i<data.categories.length; i++) {
-                var category = data.categories[i];
-                $('#categorySelect').append('<option value="' + category + '"' + (category === selectedCategory ? ' selected' : '') + '>' + category + '</option>');
-            }
-            var columnOptions = [];
-            for(var i=0; i<data.columns.length; i++) {
-                var column = data.columns[i];
-                $('#columnSelect').append('<option value="' + i + '"' + (i === selectedColumn ? ' selected' : '') + '>' + column + '</option>');
-            }
-            var datasetOptions = [];
-            for(var i=0; i<data.datasets.length; i++) {
-                var dataset = data.datasets[i];
-                $('#datasetSelect').append('<option value="' + dataset.id + '"' + (selectedDataset == dataset.id ? ' selected' : '') + '>' + dataset.label + '</option>');
-            }
-            $('#categorySelect').change(function() {
-                selectedCategory = $('#categorySelect').val();
-                refreshDataPoints();
-            });
-            $('#columnSelect').change(function() {
-                var val = $('#columnSelect').val();
-                selectedColumn = val;
-                refreshDataPoints();
-            });
-            $('#datasetSelect').change(function() {
-                var val = $('#datasetSelect').val();
-                loadDataset(val, selectedLevel);
-            });
-            $('#bar').show();
-        },
         success: function(){
             console.log('success');
         }
+    }).done(function(data){
+        currentData = data;
+        selectedCategory = data.categories[0];
+        refreshDataPoints();
+        $('#categorySelect option').remove();
+        $('#datasetSelect option').remove();
+        $('#columnSelect option').remove();
+
+        for (var i=0; i<data.categories.length; i++) {
+            var category = data.categories[i];
+            $('#categorySelect').append('<option value="' + category + '"' + (category === selectedCategory ? ' selected' : '') + '>' + category + '</option>');
+        }
+        var columnOptions = [];
+        for(var i=0; i<data.columns.length; i++) {
+            var column = data.columns[i];
+            $('#columnSelect').append('<option value="' + i + '"' + (i === selectedColumn ? ' selected' : '') + '>' + column + '</option>');
+        }
+        var datasetOptions = [];
+        for(var i=0; i<data.datasets.length; i++) {
+            var dataset = data.datasets[i];
+            $('#datasetSelect').append('<option value="' + dataset.id + '"' + (selectedDataset == dataset.id ? ' selected' : '') + '>' + dataset.label + '</option>');
+        }
+        $('#categorySelect').change(function() {
+            selectedCategory = $('#categorySelect').val();
+            refreshDataPoints();
+        });
+        $('#columnSelect').change(function() {
+            var val = $('#columnSelect').val();
+            selectedColumn = val;
+            refreshDataPoints();
+        });
+        $('#datasetSelect').change(function() {
+            var val = $('#datasetSelect').val();
+            loadDataset(val, selectedLevel);
+        });
+        $('#bar').show();
     });
 }
 
