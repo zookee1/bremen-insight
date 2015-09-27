@@ -102,7 +102,7 @@ select {
     }
 
     .control__item {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
         background-image: url(/bundles/bremenhackinsight/images/arrow_right.svg);
     }
 }
