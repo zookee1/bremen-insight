@@ -87,12 +87,25 @@ function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
 }
 
+function is_touch_device() {
+    return 'ontouchstart' in window // works on most browsers
+        || 'onmsgesturechange' in window; // works on ie10
+}
+
 function onEachFeature(feature, layer) {
-    layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight,
-        click: zoomToFeature
-    });
+    if(is_touch_device()) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: highlightFeature
+        });
+    } else {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    }
 }
 
 function getScala() {
