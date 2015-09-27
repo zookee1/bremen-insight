@@ -1,4 +1,4 @@
-var map = L.map('map').setView([53.083333, 8.8], 10);
+var map = L.map('map').setView([53.125, 8.8], 11);
 var selectedCategory, selectedColumn = 0, selectedDataset, selectedLevel, currentData, legend, controls;
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
